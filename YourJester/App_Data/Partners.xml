@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/uol.png</ImageUrl>
+    <NavigateUrl>http://uol.com.br/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/ca.png</ImageUrl>
+    <NavigateUrl>http://www.cea.com.br/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>    
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/cocacola.png</ImageUrl>
+    <NavigateUrl>http://www.cocacola.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/dow.png</ImageUrl>
+    <NavigateUrl>http://www.dow.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/google.png</ImageUrl>
+    <NavigateUrl>http://www.google.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/hyundai.png</ImageUrl>
+    <NavigateUrl>http://www.hyundai.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/intel.png</ImageUrl>
+    <NavigateUrl>http://www.intel.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/jaguar.png</ImageUrl>
+    <NavigateUrl>http://www.jaguar.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>    
+    
+  <Ad>
+    <ImageUrl>~/Images/partners/microsoft.png</ImageUrl>
+    <NavigateUrl>http://www.microsoft.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>  
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/nestle.png</ImageUrl>
+    <NavigateUrl>http://www.nestle.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>    
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/shell.png</ImageUrl>
+    <NavigateUrl>http://www.shell.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>    
+  
+  <Ad>
+    <ImageUrl>~/Images/partners/skype.png</ImageUrl>
+    <NavigateUrl>http://www.skype.com/</NavigateUrl>
+    <Impressions>20</Impressions>
+  </Ad>    
+
+</Advertisements>

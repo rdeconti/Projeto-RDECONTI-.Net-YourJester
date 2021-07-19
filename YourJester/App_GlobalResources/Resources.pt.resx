@@ -1,0 +1,1725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mailTextBody001" xml:space="preserve">
+    <value>A sua conta foi criada em WWW.YourJester.com. Por favor, confirme esta criação com este código de usuário e senha:</value>
+  </data>
+  <data name="mailTextSubject001" xml:space="preserve">
+    <value>Portal do Bobo da Corte - Sua conta está criada</value>
+  </data>
+  <data name="messageCode001" xml:space="preserve">
+    <value>Sua tentativa de conexão não foi bem sucedida, por favor tente novamente.</value>
+  </data>
+  <data name="messageCode002" xml:space="preserve">
+    <value>Senha requerida.</value>
+  </data>
+  <data name="messageCode003" xml:space="preserve">
+    <value>Código usuário requerido.</value>
+  </data>
+  <data name="messageCode005" xml:space="preserve">
+    <value>Tamanho entre 5 e 10 caracteres</value>
+  </data>
+  <data name="messageCode006" xml:space="preserve">
+    <value>Letras, números e caracteres especiais são requeridos.</value>
+  </data>
+  <data name="messageCode007" xml:space="preserve">
+    <value>Nova senha incorreta: tamanho entre 5 e 10 caracteres.</value>
+  </data>
+  <data name="messageCode008" xml:space="preserve">
+    <value>Nova senha incorreta: Letras, números e caracteres especiais são requeridos.</value>
+  </data>
+  <data name="messageCode009" xml:space="preserve">
+    <value>Nova senha precisa ser diferente das antigas senhas.</value>
+  </data>
+  <data name="messageCode010" xml:space="preserve">
+    <value>Nova senha e confirmação precisam ser iguais.</value>
+  </data>
+  <data name="messageCode011" xml:space="preserve">
+    <value>Nova senha é requerida.</value>
+  </data>
+  <data name="messageCode012" xml:space="preserve">
+    <value>Sua senha foi alterada!</value>
+  </data>
+  <data name="messageCode013" xml:space="preserve">
+    <value>Sua conta foi criada com sucesso!</value>
+  </data>
+  <data name="messageCode014" xml:space="preserve">
+    <value>Por favor informe um código de usuário diferente. Este já existe.</value>
+  </data>
+  <data name="messageCode015" xml:space="preserve">
+    <value>Por favor informe um e-Mail diferente.Este já existe.</value>
+  </data>
+  <data name="messageCode016" xml:space="preserve">
+    <value>e-Mail é requerido.</value>
+  </data>
+  <data name="messageCode017" xml:space="preserve">
+    <value>Confirmação de senha é requerido.</value>
+  </data>
+  <data name="messageCode018" xml:space="preserve">
+    <value>Senha e confirmação de senhas precisam ser iguais.</value>
+  </data>
+  <data name="messageCode021" xml:space="preserve">
+    <value>Sua senha foi enviada para seu e-Mail.</value>
+  </data>
+  <data name="messageCode022" xml:space="preserve">
+    <value>Sua tentativa de recuperar sua password não foi bem sucedida. Por favor tente novamente.</value>
+  </data>
+  <data name="messageCode023" xml:space="preserve">
+    <value>Sua resposta de segurança não pode ser verificada. Por favor tente novamente.</value>
+  </data>
+  <data name="messageCode024" xml:space="preserve">
+    <value>Sua questão de segurança não pode ser verificada. Por favor tente novamente.</value>
+  </data>
+  <data name="messageCode025" xml:space="preserve">
+    <value>Por favor, esteja conectado para acessar seus dados!</value>
+  </data>
+  <data name="messageCode026" xml:space="preserve">
+    <value>Necessita ter pelo menos uma letra</value>
+  </data>
+  <data name="messageCode027" xml:space="preserve">
+    <value>Necessita ter pelo menos um dígito</value>
+  </data>
+  <data name="messageCode028" xml:space="preserve">
+    <value>Necessita ter pelo menos um caracter especial</value>
+  </data>
+  <data name="messageCode029" xml:space="preserve">
+    <value>Não pode ter mais do que dois caracteres repetidos</value>
+  </data>
+  <data name="messageCode030" xml:space="preserve">
+    <value>Nome completo requerido.</value>
+  </data>
+  <data name="messageCode031" xml:space="preserve">
+    <value>Por favor corrija esta informação</value>
+  </data>
+  <data name="messageCode032" xml:space="preserve">
+    <value>Data de nascimento requerida.</value>
+  </data>
+  <data name="messageCode033" xml:space="preserve">
+    <value>Idioma requerido.</value>
+  </data>
+  <data name="messageCode034" xml:space="preserve">
+    <value>Um código de confirmação foi enviado para seu endereço de e-Mail. Por favor verifique e volte para acessar sua conta.</value>
+  </data>
+  <data name="messageCode035" xml:space="preserve">
+    <value>Código de confirmação não foi gerado!</value>
+  </data>
+  <data name="messageCode037" xml:space="preserve">
+    <value>Código de confirmação é requerido.</value>
+  </data>
+  <data name="messageCode038" xml:space="preserve">
+    <value>Código de confirmação está incorreto.</value>
+  </data>
+  <data name="messageCode039" xml:space="preserve">
+    <value>Código do usuário e senha estão incorretos</value>
+  </data>
+  <data name="messageCode040" xml:space="preserve">
+    <value>Password decrypt process was not done!</value>
+  </data>
+  <data name="messageCode041" xml:space="preserve">
+    <value>Sua conta de usuário ainda não foi confirmada.</value>
+  </data>
+  <data name="messageCode042" xml:space="preserve">
+    <value>Get users master data process was not done!</value>
+  </data>
+  <data name="messageCode043" xml:space="preserve">
+    <value>Endereço de e-Mail não é válido</value>
+  </data>
+  <data name="messageCode044" xml:space="preserve">
+    <value>Problems with language SELECTed to portal</value>
+  </data>
+  <data name="messageCode045" xml:space="preserve">
+    <value>Não foi possível gravar o historico de conexão</value>
+  </data>
+  <data name="messageCode046" xml:space="preserve">
+    <value>Você excedeu o número de tentativas de conexão</value>
+  </data>
+  <data name="messageCode047" xml:space="preserve">
+    <value>Não foi possível atualizar o status da senha</value>
+  </data>
+  <data name="messageCode048" xml:space="preserve">
+    <value>Nenhum e-Mail registrado para este código de usuário</value>
+  </data>
+  <data name="messageCode049" xml:space="preserve">
+    <value>Nenhuna senha válida para este usuário</value>
+  </data>
+  <data name="messageCode050" xml:space="preserve">
+    <value>Senha não foi gerada</value>
+  </data>
+  <data name="messageCode051" xml:space="preserve">
+    <value>Olá! Bom dia!</value>
+  </data>
+  <data name="messageCode052" xml:space="preserve">
+    <value>Olá! Boa tarde!</value>
+  </data>
+  <data name="messageCode053" xml:space="preserve">
+    <value>Olá! Boa noite!</value>
+  </data>
+  <data name="messageCode054" xml:space="preserve">
+    <value>Olá! Boa noite!</value>
+  </data>
+  <data name="messageCode055" xml:space="preserve">
+    <value>Lista de generos está com problemas!</value>
+  </data>
+  <data name="messageCode056" xml:space="preserve">
+    <value>Lista de estado civil com problemas</value>
+  </data>
+  <data name="messageCode057" xml:space="preserve">
+    <value>Nós estamos trabalhando na tradução de nosso portal para seu idioma!</value>
+  </data>
+  <data name="messageCode058" xml:space="preserve">
+    <value>Uma opção para cada caixa deve ser selecionada</value>
+  </data>
+  <data name="messageCode059" xml:space="preserve">
+    <value>Código de uauário não existe</value>
+  </data>
+  <data name="messageCode060" xml:space="preserve">
+    <value>Não existe uma página anterior</value>
+  </data>
+  <data name="messageCode061" xml:space="preserve">
+    <value>Não há uma página seguinte</value>
+  </data>
+  <data name="textAccount" xml:space="preserve">
+    <value>Conta</value>
+  </data>
+  <data name="textAccountChange" xml:space="preserve">
+    <value>Alterar conta do usuário</value>
+  </data>
+  <data name="textAccountConfirmation" xml:space="preserve">
+    <value>Confirmar conta do usuário</value>
+  </data>
+  <data name="textAccountCreate" xml:space="preserve">
+    <value>Criar conta do usuário</value>
+  </data>
+  <data name="textAccountHistory" xml:space="preserve">
+    <value>Histórico da conta do usuário</value>
+  </data>
+  <data name="textAccountLogOn" xml:space="preserve">
+    <value>Entrar na conta de usuário</value>
+  </data>
+  <data name="textAccountLogout" xml:space="preserve">
+    <value>Sair da conta de usuário</value>
+  </data>
+  <data name="textAccountRecovery" xml:space="preserve">
+    <value>Recuperar conta de usuário</value>
+  </data>
+  <data name="textAdditional" xml:space="preserve">
+    <value>Adicional</value>
+  </data>
+  <data name="textAddress" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="textAge" xml:space="preserve">
+    <value>idade</value>
+  </data>
+  <data name="textAmulets" xml:space="preserve">
+    <value>Amuletos</value>
+  </data>
+  <data name="textAngels" xml:space="preserve">
+    <value>Anjo</value>
+  </data>
+  <data name="textAnswerDate" xml:space="preserve">
+    <value>data resposta</value>
+  </data>
+  <data name="textAnswerHour" xml:space="preserve">
+    <value>resposta hora</value>
+  </data>
+  <data name="textApartament" xml:space="preserve">
+    <value>Apartamento</value>
+  </data>
+  <data name="textApproved" xml:space="preserve">
+    <value>Aprovaram</value>
+  </data>
+  <data name="textArea" xml:space="preserve">
+    <value>área</value>
+  </data>
+  <data name="textAstrologyAztec" xml:space="preserve">
+    <value>Astrologia Asteca</value>
+  </data>
+  <data name="textAstrologyBrazilian" xml:space="preserve">
+    <value>Astrologia Brasileira</value>
+  </data>
+  <data name="textAstrologyCeltic" xml:space="preserve">
+    <value>Astrologia Celta</value>
+  </data>
+  <data name="textAstrologyChinese" xml:space="preserve">
+    <value>Astrologia Chinesa</value>
+  </data>
+  <data name="textAstrologyEgyptian" xml:space="preserve">
+    <value>Astrologia Egípcia</value>
+  </data>
+  <data name="textAstrologyGypsy" xml:space="preserve">
+    <value>Astrologia Cigana</value>
+  </data>
+  <data name="textAstrologyIndian" xml:space="preserve">
+    <value>Astrologia Indiana</value>
+  </data>
+  <data name="textAstrologyMaya" xml:space="preserve">
+    <value>Astrologia Maia</value>
+  </data>
+  <data name="textAstrologyOcidental" xml:space="preserve">
+    <value>Astrologia Ocidental</value>
+  </data>
+  <data name="textAstrologyShamanic" xml:space="preserve">
+    <value>Astrologia Xamânica</value>
+  </data>
+  <data name="textAtonement" xml:space="preserve">
+    <value>Atonement</value>
+  </data>
+  <data name="textBiorhythm" xml:space="preserve">
+    <value>Biorritmo</value>
+  </data>
+  <data name="textBirthday" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="textBirthTime" xml:space="preserve">
+    <value>Hora de nascimento</value>
+  </data>
+  <data name="textBlog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="textBooks" xml:space="preserve">
+    <value>Livros</value>
+  </data>
+  <data name="textBorn" xml:space="preserve">
+    <value>Onde você nasceu?</value>
+  </data>
+  <data name="textBornPressage" xml:space="preserve">
+    <value>Presságio do Nascimento</value>
+  </data>
+  <data name="textBrowse" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="textCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="textCep" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="textChange" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
+  <data name="textCharacteristicsNegative" xml:space="preserve">
+    <value>Caracteristica negativa</value>
+  </data>
+  <data name="textCharacteristicsPositive" xml:space="preserve">
+    <value>Caracteristica positiva</value>
+  </data>
+  <data name="textChooseOneOption" xml:space="preserve">
+    <value>Escolha uma opção</value>
+  </data>
+  <data name="textCity" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="textComment" xml:space="preserve">
+    <value>Comentário</value>
+  </data>
+  <data name="textComplement" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="textConditions" xml:space="preserve">
+    <value>Condições</value>
+  </data>
+  <data name="textConfigurations" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="textConfirmations" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="textContacts" xml:space="preserve">
+    <value>Contatos</value>
+  </data>
+  <data name="textCps" xml:space="preserve">
+    <value>Cps</value>
+  </data>
+  <data name="textCopyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="textCountry" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="textBirthCountry" xml:space="preserve">
+    <value>País onde você nasceu</value>
+  </data>
+  <data name="textLiveCountry" xml:space="preserve">
+    <value>País onde você vive</value>
+  </data>
+  <data name="textCreate" xml:space="preserve">
+    <value>Criar</value>
+  </data>
+  <data name="textCreation" xml:space="preserve">
+    <value>Criação</value>
+  </data>
+  <data name="textCredits" xml:space="preserve">
+    <value>Créditos</value>
+  </data>
+  <data name="textCurrency" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="textCustomers" xml:space="preserve">
+    <value>Nossos clientes</value>
+  </data>
+  <data name="textDay" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="textDescription" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="textDestiny" xml:space="preserve">
+    <value>destino</value>
+  </data>
+  <data name="textDislike" xml:space="preserve">
+    <value>Não curte</value>
+  </data>
+  <data name="textDistrict" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="textDonations" xml:space="preserve">
+    <value>Doações</value>
+  </data>
+  <data name="textDoubts" xml:space="preserve">
+    <value>Dúvidas</value>
+  </data>
+  <data name="textEnneagramQuestions" xml:space="preserve">
+    <value>Perguntas enneagrama</value>
+  </data>
+  <data name="textEnneagramResults" xml:space="preserve">
+    <value>Resultados enneagrama</value>
+  </data>
+  <data name="textEqual" xml:space="preserve">
+    <value>igual</value>
+  </data>
+  <data name="textError" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="textExpression" xml:space="preserve">
+    <value>expressão</value>
+  </data>
+  <data name="textFacebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="textFamily" xml:space="preserve">
+    <value>família</value>
+  </data>
+  <data name="textFavorites" xml:space="preserve">
+    <value>Favoritos</value>
+  </data>
+  <data name="textFind" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="textFinishDate" xml:space="preserve">
+    <value>data de término</value>
+  </data>
+  <data name="textFinishHour" xml:space="preserve">
+    <value>Concluir hora</value>
+  </data>
+  <data name="textFirstchallenge" xml:space="preserve">
+    <value>primeiro desafio</value>
+  </data>
+  <data name="textFirstcycle" xml:space="preserve">
+    <value>primeiro ciclo</value>
+  </data>
+  <data name="textFirstName" xml:space="preserve">
+    <value>Primeiro nome</value>
+  </data>
+  <data name="textFullName" xml:space="preserve">
+    <value>Nome completo</value>
+  </data>
+  <data name="textGender" xml:space="preserve">
+    <value>Genero</value>
+  </data>
+  <data name="textGrief" xml:space="preserve">
+    <value>Grief</value>
+  </data>
+  <data name="textHealth" xml:space="preserve">
+    <value>saúde</value>
+  </data>
+  <data name="textHelp" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="textHobbies" xml:space="preserve">
+    <value>Hobbies</value>
+  </data>
+  <data name="textHome" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="textHour" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="textIdentification" xml:space="preserve">
+    <value>Identificação</value>
+  </data>
+  <data name="textInstagram" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="textInstinct" xml:space="preserve">
+    <value>instinto</value>
+  </data>
+  <data name="textKarma" xml:space="preserve">
+    <value>carma</value>
+  </data>
+  <data name="textKeywords" xml:space="preserve">
+    <value>palavras-chave</value>
+  </data>
+  <data name="textLament" xml:space="preserve">
+    <value>Lamentação</value>
+  </data>
+  <data name="textLanguage" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="textLanguages" xml:space="preserve">
+    <value>idiomas</value>
+  </data>
+  <data name="textLastName" xml:space="preserve">
+    <value>Sobrenome</value>
+  </data>
+  <data name="textLike" xml:space="preserve">
+    <value>Curte</value>
+  </data>
+  <data name="textLinkedin" xml:space="preserve">
+    <value>Linkedin</value>
+  </data>
+  <data name="textLive" xml:space="preserve">
+    <value>Onde você vive?</value>
+  </data>
+  <data name="textLogOn" xml:space="preserve">
+    <value>Conectar</value>
+  </data>
+  <data name="textLogOnConfirmation" xml:space="preserve">
+    <value>Código de confirmação</value>
+  </data>
+  <data name="textLogOnConfirmNewUserPassword" xml:space="preserve">
+    <value>Confirme nova senha</value>
+  </data>
+  <data name="textLogOnConfirmPassword" xml:space="preserve">
+    <value>Confirmar senha</value>
+  </data>
+  <data name="textLogOnEmail" xml:space="preserve">
+    <value>e-Mail</value>
+  </data>
+  <data name="textLogOnNewUserPassword" xml:space="preserve">
+    <value>Nova senha</value>
+  </data>
+  <data name="textLogOnPassword" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="textLogOnUserCode" xml:space="preserve">
+    <value>Código de usuário</value>
+  </data>
+  <data name="textLogOnUserPassword" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="textLogOnUserRemember" xml:space="preserve">
+    <value>Lembre-se de mim na próxima vez.</value>
+  </data>
+  <data name="textLogout" xml:space="preserve">
+    <value>Desconectar</value>
+  </data>
+  <data name="textMail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="textMaritalStatus" xml:space="preserve">
+    <value>Estado civil</value>
+  </data>
+  <data name="textMaterials" xml:space="preserve">
+    <value>Materiais</value>
+  </data>
+  <data name="textMiddleName" xml:space="preserve">
+    <value>Nome do meio</value>
+  </data>
+  <data name="textMinute" xml:space="preserve">
+    <value>Minuto</value>
+  </data>
+  <data name="textMission" xml:space="preserve">
+    <value>Missão</value>
+  </data>
+  <data name="textMissions" xml:space="preserve">
+    <value>Missões</value>
+  </data>
+  <data name="textMonth" xml:space="preserve">
+    <value>Mes</value>
+  </data>
+  <data name="textMotivation" xml:space="preserve">
+    <value>Motivação</value>
+  </data>
+  <data name="textName" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="textNewsLetter" xml:space="preserve">
+    <value>Newsletter</value>
+  </data>
+  <data name="textNext" xml:space="preserve">
+    <value>Próxima</value>
+  </data>
+  <data name="textNickname" xml:space="preserve">
+    <value>Apelido</value>
+  </data>
+  <data name="textNo" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="textNoUpdate" xml:space="preserve">
+    <value>Não atualizar</value>
+  </data>
+  <data name="textNumber" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="textNumerology" xml:space="preserve">
+    <value>Numerologia</value>
+  </data>
+  <data name="textOccupations" xml:space="preserve">
+    <value>Occupação</value>
+  </data>
+  <data name="textApp" xml:space="preserve">
+    <value>Nosso aplicativo</value>
+  </data>
+  <data name="textAwards" xml:space="preserve">
+    <value>nossos prêmios</value>
+  </data>
+  <data name="textEnterprise" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="textPartners" xml:space="preserve">
+    <value>Parceiros</value>
+  </data>
+  <data name="textParents" xml:space="preserve">
+    <value>pais</value>
+  </data>
+  <data name="textPersonality" xml:space="preserve">
+    <value>personalidade</value>
+  </data>
+  <data name="textStep" xml:space="preserve">
+    <value>Fase</value>
+  </data>
+  <data name="textPhone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="textPhone1" xml:space="preserve">
+    <value>Telefone 1</value>
+  </data>
+  <data name="textPhone2" xml:space="preserve">
+    <value>Telefone 2</value>
+  </data>
+  <data name="textPhoto" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="textPintrest" xml:space="preserve">
+    <value>Pintrest</value>
+  </data>
+  <data name="textPoints" xml:space="preserve">
+    <value>Pontos</value>
+  </data>
+  <data name="textPortalMap" xml:space="preserve">
+    <value>Mapa do portal</value>
+  </data>
+  <data name="textPostbox" xml:space="preserve">
+    <value>Caixa postal</value>
+  </data>
+  <data name="textPrevious" xml:space="preserve">
+    <value>anterior</value>
+  </data>
+  <data name="textPrivacity" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="textProfession" xml:space="preserve">
+    <value>profissão</value>
+  </data>
+  <data name="textProviders" xml:space="preserve">
+    <value>Fornecedores</value>
+  </data>
+  <data name="textQuestionNumber" xml:space="preserve">
+    <value>pergunta número</value>
+  </data>
+  <data name="textQuestions" xml:space="preserve">
+    <value>Perguntas</value>
+  </data>
+  <data name="textRecovery" xml:space="preserve">
+    <value>Recuperar</value>
+  </data>
+  <data name="textRegion" xml:space="preserve">
+    <value>Região</value>
+  </data>
+  <data name="textReligions" xml:space="preserve">
+    <value>Religião</value>
+  </data>
+  <data name="textRepproved" xml:space="preserve">
+    <value>Reprovaram</value>
+  </data>
+  <data name="textSchooling" xml:space="preserve">
+    <value>Escolaridade</value>
+  </data>
+  <data name="textSecond" xml:space="preserve">
+    <value>Segundo</value>
+  </data>
+  <data name="textSecondChallenge" xml:space="preserve">
+    <value>segundo desafio</value>
+  </data>
+  <data name="textSecondCycle" xml:space="preserve">
+    <value>segundo ciclo</value>
+  </data>
+  <data name="textServices" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="textSexuality" xml:space="preserve">
+    <value>Sexualidade</value>
+  </data>
+  <data name="textShare" xml:space="preserve">
+    <value>Compartilhar</value>
+  </data>
+  <data name="textShared" xml:space="preserve">
+    <value>Compartilhado</value>
+  </data>
+  <data name="textShopping" xml:space="preserve">
+    <value>Compras</value>
+  </data>
+  <data name="textSports" xml:space="preserve">
+    <value>Esportes</value>
+  </data>
+  <data name="textStartDate" xml:space="preserve">
+    <value>Data de início</value>
+  </data>
+  <data name="textStartHour" xml:space="preserve">
+    <value>Comece hora</value>
+  </data>
+  <data name="textStatistics" xml:space="preserve">
+    <value>Estatísticas</value>
+  </data>
+  <data name="textStreet" xml:space="preserve">
+    <value>Rua</value>
+  </data>
+  <data name="textSubconscious" xml:space="preserve">
+    <value>subconsciente</value>
+  </data>
+  <data name="textTemperament" xml:space="preserve">
+    <value>Temperamento</value>
+  </data>
+  <data name="textTermsofuse" xml:space="preserve">
+    <value>Termos de uso</value>
+  </data>
+  <data name="textThirdchallenge" xml:space="preserve">
+    <value>terceiro desafio</value>
+  </data>
+  <data name="textThirdCycle" xml:space="preserve">
+    <value>terceiro ciclo</value>
+  </data>
+  <data name="textTwitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="textUnderCurrents" xml:space="preserve">
+    <value>undercurrents</value>
+  </data>
+  <data name="textUpdate" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="textUpload" xml:space="preserve">
+    <value>Carregar</value>
+  </data>
+  <data name="textValue" xml:space="preserve">
+    <value>valor</value>
+  </data>
+  <data name="textWage" xml:space="preserve">
+    <value>Ganhos</value>
+  </data>
+  <data name="textWorkshop" xml:space="preserve">
+    <value>Workshop</value>
+  </data>
+  <data name="textYear" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="textYes" xml:space="preserve">
+    <value>sim</value>
+  </data>
+  <data name="textYouByOthers" xml:space="preserve">
+    <value>Você pelos outros</value>
+  </data>
+  <data name="textYouDescribeYou" xml:space="preserve">
+    <value>Você descreve você</value>
+  </data>
+  <data name="textYouDiscoverYou" xml:space="preserve">
+    <value>Você descobre você</value>
+  </data>
+  <data name="textYouInAction" xml:space="preserve">
+    <value>Você em ação</value>
+  </data>
+  <data name="textYouToday" xml:space="preserve">
+    <value>Você hoje</value>
+  </data>
+  <data name="textYouTomorrow" xml:space="preserve">
+    <value>Você amanhã</value>
+  </data>
+  <data name="textYouVirtual" xml:space="preserve">
+    <value>Você virtual</value>
+  </data>
+  <data name="textMessageError" xml:space="preserve">
+    <value>Desculpe! Tivemos uma exceção! Estamos trabalhando nisso! Por favor continue conosco!</value>
+  </data>
+  <data name="textViewed" xml:space="preserve">
+    <value>Visto</value>
+  </data>
+  <data name="messageCode062" xml:space="preserve">
+    <value>Seus dados foram atualizados!</value>
+  </data>
+  <data name="textCpsQuestions" xml:space="preserve">
+    <value>Perguntas Cps</value>
+  </data>
+  <data name="textCpsresults" xml:space="preserve">
+    <value>Resultados Cps</value>
+  </data>
+  <data name="textEnneagram" xml:space="preserve">
+    <value>Eneagrama</value>
+  </data>
+  <data name="textHippocratesResults" xml:space="preserve">
+    <value>Resultados Hippocrates</value>
+  </data>
+  <data name="textHippocrates" xml:space="preserve">
+    <value>Hippocrates</value>
+  </data>
+  <data name="textHippocratesQuestions" xml:space="preserve">
+    <value>Perguntas Hippocrates</value>
+  </data>
+  <data name="messageCode063" xml:space="preserve">
+    <value>Suas respostas foram atualizadas!</value>
+  </data>
+  <data name="textBad" xml:space="preserve">
+    <value>Mau</value>
+  </data>
+  <data name="textDirection" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="textGood" xml:space="preserve">
+    <value>Bom</value>
+  </data>
+  <data name="textMedium" xml:space="preserve">
+    <value>medium</value>
+  </data>
+  <data name="textProfile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="textRecommendation" xml:space="preserve">
+    <value>Recomendação</value>
+  </data>
+  <data name="textTriad" xml:space="preserve">
+    <value>Triade</value>
+  </data>
+  <data name="textType" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="textAddiction" xml:space="preserve">
+    <value>addiction</value>
+  </data>
+  <data name="textVirtue" xml:space="preserve">
+    <value>Virtude</value>
+  </data>
+  <data name="messageCode064" xml:space="preserve">
+    <value>Você não tem resultados para seu enneagrama!</value>
+  </data>
+  <data name="textAnswer1" xml:space="preserve">
+    <value>Nunca</value>
+  </data>
+  <data name="textAnswer2" xml:space="preserve">
+    <value>Muito raramente</value>
+  </data>
+  <data name="textradioAnswer3" xml:space="preserve">
+    <value>Raramente</value>
+  </data>
+  <data name="textAnswer4" xml:space="preserve">
+    <value>Ocasionalmente</value>
+  </data>
+  <data name="textAnswer5" xml:space="preserve">
+    <value>Frequentemente</value>
+  </data>
+  <data name="textAnswer6" xml:space="preserve">
+    <value>Muito frequentemente</value>
+  </data>
+  <data name="textAnswer7" xml:space="preserve">
+    <value>Sempre</value>
+  </data>
+  <data name="textApperance" xml:space="preserve">
+    <value>Aparência</value>
+  </data>
+  <data name="textAttitudes" xml:space="preserve">
+    <value>Atutudes</value>
+  </data>
+  <data name="textClothing" xml:space="preserve">
+    <value>Vestuário</value>
+  </data>
+  <data name="textDisposal" xml:space="preserve">
+    <value>Disposição</value>
+  </data>
+  <data name="textDrawings" xml:space="preserve">
+    <value>Formas</value>
+  </data>
+  <data name="textEyes" xml:space="preserve">
+    <value>Olhos</value>
+  </data>
+  <data name="textFood" xml:space="preserve">
+    <value>Alimentação</value>
+  </data>
+  <data name="textGestures" xml:space="preserve">
+    <value>Gestual</value>
+  </data>
+  <data name="textHabits" xml:space="preserve">
+    <value>Habitos</value>
+  </data>
+  <data name="textInterest" xml:space="preserve">
+    <value>Interesses</value>
+  </data>
+  <data name="textMemory" xml:space="preserve">
+    <value>Memória</value>
+  </data>
+  <data name="textObservation" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="textRelationships" xml:space="preserve">
+    <value>Relacionamentos</value>
+  </data>
+  <data name="textSpeaking" xml:space="preserve">
+    <value>Fala</value>
+  </data>
+  <data name="textWalk" xml:space="preserve">
+    <value>Caminhar</value>
+  </data>
+  <data name="textCalendar" xml:space="preserve">
+    <value>Calendário</value>
+  </data>
+  <data name="textCards" xml:space="preserve">
+    <value>Cartões</value>
+  </data>
+  <data name="textIdeias" xml:space="preserve">
+    <value>Ideias</value>
+  </data>
+  <data name="textMandalas" xml:space="preserve">
+    <value>Mandalas</value>
+  </data>
+  <data name="textMovies" xml:space="preserve">
+    <value>Filmes</value>
+  </data>
+  <data name="textMusic" xml:space="preserve">
+    <value>Músicas</value>
+  </data>
+  <data name="textOracle" xml:space="preserve">
+    <value>Oráculo</value>
+  </data>
+  <data name="textWallpapers" xml:space="preserve">
+    <value>Wallpapers</value>
+  </data>
+  <data name="textAutocheckQuestions" xml:space="preserve">
+    <value>Auto teste questões</value>
+  </data>
+  <data name="textAutocheckResults" xml:space="preserve">
+    <value>Auto teste resultados</value>
+  </data>
+  <data name="textCharacteristic" xml:space="preserve">
+    <value>Característica</value>
+  </data>
+  <data name="textCharacteristicsNeutral" xml:space="preserve">
+    <value>Caracteristica neutra</value>
+  </data>
+  <data name="textDelete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="textTasks" xml:space="preserve">
+    <value>Tarefas</value>
+  </data>
+  <data name="textProjects" xml:space="preserve">
+    <value>Projetos</value>
+  </data>
+  <data name="textStatus" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="textFinished" xml:space="preserve">
+    <value>Fim</value>
+  </data>
+  <data name="textStarted" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="textCosts" xml:space="preserve">
+    <value>Custos</value>
+  </data>
+  <data name="textResponsible" xml:space="preserve">
+    <value>Responsável</value>
+  </data>
+  <data name="messageCode065" xml:space="preserve">
+    <value>Projeto foi excluído</value>
+  </data>
+  <data name="messageCode066" xml:space="preserve">
+    <value>Projeto foi alterado</value>
+  </data>
+  <data name="messageCode067" xml:space="preserve">
+    <value>Projeto foi criado</value>
+  </data>
+  <data name="messageCode068" xml:space="preserve">
+    <value>Tarefa foi excluída</value>
+  </data>
+  <data name="messageCode069" xml:space="preserve">
+    <value>Tarefa foi alterada</value>
+  </data>
+  <data name="messageCode070" xml:space="preserve">
+    <value>Tarefa foi criada</value>
+  </data>
+  <data name="messageCode071" xml:space="preserve">
+    <value>Projeto foi iniciado</value>
+  </data>
+  <data name="messageCode072" xml:space="preserve">
+    <value>Projeto foi finalizado</value>
+  </data>
+  <data name="messageCode073" xml:space="preserve">
+    <value>Tarefa foi iniciada</value>
+  </data>
+  <data name="messageCode074" xml:space="preserve">
+    <value>Tarefa foi finalizada</value>
+  </data>
+  <data name="textRemember" xml:space="preserve">
+    <value>Lembrar</value>
+  </data>
+  <data name="textShow" xml:space="preserve">
+    <value>Mostrar</value>
+  </data>
+  <data name="messageCode075" xml:space="preserve">
+    <value>Carregue uma foto que identifique você para o mundo</value>
+  </data>
+  <data name="textCopy" xml:space="preserve">
+    <value>En cópia</value>
+  </data>
+  <data name="textFrom" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="textMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="textTitle" xml:space="preserve">
+    <value>Titulo</value>
+  </data>
+  <data name="textTo" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="textEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="textSend" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="messageCode076" xml:space="preserve">
+    <value>Email foi enviado para YourJester!</value>
+  </data>
+  <data name="longTextMission" xml:space="preserve">
+    <value>Nossa missão tem como base os princípios da hierarquia das necessidades básicas de 
+Abraham Maslow (1980 – 1970)
+
+Queremos ajudar as pessoas a obter suas auto realizações.
+Queremos mostrar as pessoas que elas devem ser autênticas e que percebam as suas próprias características.
+Queremos  mostrar as pessoas que elas podem se separar de suas características culturais para tornarem-se cidadãos do Mundo. 
+Queremos ajudar as pessoas a encontrarem as suas verdadeiras vocações. 
+Queremos  mostrar que a vida é preciosa e que se as pessoas estiverem abertas a reconhecer o que é bom e a felicidade em todo o tipo de coisas, a vida é muito valiosa. 
+Queremos mostrar que temos que aceitar as pessoas tal como elas são e ajudá-las a encontrarem a sua verdadeira natureza.
+Queremos mostrar que as necessidades básicas da pessoas devem ser satisfeitas
+Queremos mostrar as pessoas que devemos apreciar a beleza e todas as coisas boas da natureza.
+Queremos mostrar que há regras boas e que a total inexistência delas é nefasta.
+Queremos mostrar as pessoas que não devemos  dar importância aos problemas triviais e devemos combater os problemas sérios. Tais como: injustiça, dor, sofrimento e morte.
+Queremos mostrar as pessoas que podemos fazer boas escolhas.
+
+Tudo isto respeitando as diferenças e escolhas de cada um. Quem escolhe o caminho é você !</value>
+  </data>
+  <data name="longTextEnterprise" xml:space="preserve">
+    <value>Oferecemos nossos produtos em 9 idiomas: Português; Inglês, Espanhol, Alemão, Francês, Árabe, Chinês, Japonês e Italiano. 
+
+Seis produtos principais estão em área pessoal protegida por sua senha onde você pode ter:
+
+1 – Através das diversas crenças atuais você vai saber como o mundo conhece você. Alguns exemplos: A cultura, hábitos e dados do seu país; seu anjo protetor; você e os horóscopos chinês, grego, cigano, árvores e egípcio; o significado de seu nome e você a numerologia.
+
+2 – Através de alguns testes de personalidade oferecidos por nós você vai conhecer melhor a si mesmo. Alguns exemplos: Eneagrama e a escala de Conrey.
+
+3 – Através da roda da transformação você vai saber qual é a sua situação atual e quais são os seus desejos e necessidades para ter um futuro melhor.
+
+4 – Vamos auxiliar você a criar um plano de desenvolvimento pessoal  para que você a se organize para que você possa realizar seus sonhos e para ser uma pessoa melhor. Você poderá monitorar seu crescimento, auxiliar seus amigos nos planos pessoais deles ou pedir ajuda a eles para realizar os sonhos de seu plano.
+
+5 – Textos nas mais diversas áreas estão disponíveis para auxiliar você a descobrir novos caminhos para seu crescimento pessoal.
+
+6 – Você pode gerar um e-book pessoal onde você vai pode imprimir ou gerar um arquivo eletrônico todos os dados obtidos sobre você mesmo em nosso site.</value>
+  </data>
+  <data name="textFirst" xml:space="preserve">
+    <value>Primeira</value>
+  </data>
+  <data name="textLast" xml:space="preserve">
+    <value>Última</value>
+  </data>
+  <data name="textList" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="textQuestion" xml:space="preserve">
+    <value>Questão</value>
+  </data>
+  <data name="textCpsList" xml:space="preserve">
+    <value>Cps List</value>
+  </data>
+  <data name="textEnneagramList" xml:space="preserve">
+    <value>Enneagram List</value>
+  </data>
+  <data name="textHippocratesList" xml:space="preserve">
+    <value>Hippocrates List</value>
+  </data>
+  <data name="textAnswer" xml:space="preserve">
+    <value>Resposta</value>
+  </data>
+  <data name="textDate" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="textYouAreInTheWorld" xml:space="preserve">
+    <value>Você no mundo</value>
+  </data>
+  <data name="textProducts" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="textRingtones" xml:space="preserve">
+    <value>Ringtones</value>
+  </data>
+  <data name="textHomeDescription00" xml:space="preserve">
+    <value>Ajudar você a se conhecer melhor e ter um plano para ser mais feliz do que hoje</value>
+  </data>
+  <data name="textHomeTitle00" xml:space="preserve">
+    <value>Nossa missão</value>
+  </data>
+  <data name="textHomeDescription01" xml:space="preserve">
+    <value>Você responde algumas questões e verifica como você está em relação ao mundo</value>
+  </data>
+  <data name="textHomeTitle01" xml:space="preserve">
+    <value>Fase 1 - Você pelo mundo</value>
+  </data>
+  <data name="textHomeDescription02" xml:space="preserve">
+    <value>Você lê as características de personalidade e escolhe as características que são mais importantes para você e para sua vida. </value>
+  </data>
+  <data name="textHomeTitle02" xml:space="preserve">
+    <value>Fase 2 - Você descreve você</value>
+  </data>
+  <data name="textHomeDescription03" xml:space="preserve">
+    <value>Você lê os oraculos que nos temos e o que eles falam sobre sua personalidade</value>
+  </data>
+  <data name="textHomeTitle03" xml:space="preserve">
+    <value>Fase 3 - Você pelos outros</value>
+  </data>
+  <data name="textHomeDescription04" xml:space="preserve">
+    <value>Você responde alguns testes e os resultados vão falar sobre você e sua personalidade</value>
+  </data>
+  <data name="textHomeTitle04" xml:space="preserve">
+    <value>Fase 4 - Você descobre você</value>
+  </data>
+  <data name="textHomeDescription05" xml:space="preserve">
+    <value>Você responde algumas questões e descobre mais e mais sobre você e sobre sua situação atual, suas competências e o que está faltando</value>
+  </data>
+  <data name="textHomeTitle05" xml:space="preserve">
+    <value>Fase 5 - Você hoje</value>
+  </data>
+  <data name="textHomeDescription06" xml:space="preserve">
+    <value>Você vai fazer um plano de ação para ser mais feliz e ter sucesso</value>
+  </data>
+  <data name="textHomeTitle06" xml:space="preserve">
+    <value>Fase 6 - Você em ação</value>
+  </data>
+  <data name="textHomeDescription07" xml:space="preserve">
+    <value>Você vai monitor seu plano e suas ações</value>
+  </data>
+  <data name="textHomeTitle07" xml:space="preserve">
+    <value>Fase 7 - Você amanhã</value>
+  </data>
+  <data name="textHomeDescription08" xml:space="preserve">
+    <value>Você pode gerar seu e-book com tudo sobre você</value>
+  </data>
+  <data name="textHomeTitle08" xml:space="preserve">
+    <value>Fase 8 - Você virtual</value>
+  </data>
+  <data name="textTrips" xml:space="preserve">
+    <value>Viagens</value>
+  </data>
+  <data name="textYou" xml:space="preserve">
+    <value>Você</value>
+  </data>
+  <data name="textTools" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="textYouByWorld" xml:space="preserve">
+    <value>Você pelo mundo</value>
+  </data>
+  <data name="textYouDefineYou" xml:space="preserve">
+    <value>Você define você</value>
+  </data>
+  <data name="textReadMore" xml:space="preserve">
+    <value>Leia mais</value>
+  </data>
+  <data name="textArabic" xml:space="preserve">
+    <value>Arabe</value>
+  </data>
+  <data name="textChinese" xml:space="preserve">
+    <value>Chines</value>
+  </data>
+  <data name="textEnglish" xml:space="preserve">
+    <value>Ingles</value>
+  </data>
+  <data name="textFrench" xml:space="preserve">
+    <value>Frances</value>
+  </data>
+  <data name="textGerman" xml:space="preserve">
+    <value>Alemão</value>
+  </data>
+  <data name="textItalian" xml:space="preserve">
+    <value>Italiano</value>
+  </data>
+  <data name="textJapanese" xml:space="preserve">
+    <value>Japones</value>
+  </data>
+  <data name="textPortuguese" xml:space="preserve">
+    <value>Portugues</value>
+  </data>
+  <data name="textConfirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="textSpanish" xml:space="preserve">
+    <value>Espanhol</value>
+  </data>
+  <data name="textHistory" xml:space="preserve">
+    <value>Histórico</value>
+  </data>
+  <data name="textInformation" xml:space="preserve">
+    <value>Informação</value>
+  </data>
+  <data name="textSince" xml:space="preserve">
+    <value>© Desde 2014 - Your Jester - Todos os direitos reservados</value>
+  </data>
+  <data name="messageCode077" xml:space="preserve">
+    <value>Foto do usuário não é válida</value>
+  </data>
+  <data name="textUserPhotos" xml:space="preserve">
+    <value>Fotos do usuário</value>
+  </data>
+  <data name="messageCode004" xml:space="preserve">
+    <value>Sua conexão foi um sucesso!</value>
+  </data>
+  <data name="messageCode078" xml:space="preserve">
+    <value>Foto do usuário atualizada</value>
+  </data>
+  <data name="textOptions" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="textUs" xml:space="preserve">
+    <value>Nós</value>
+  </data>
+  <data name="textLogoutDesc" xml:space="preserve">
+    <value>Nós recomendamos que você feche seu navegador quando voce tiver encerrado sua sessão</value>
+  </data>
+  <data name="longTextPrivacy" xml:space="preserve">
+    <value>Geral. Textos Grátis dá exterma importância em proteger sua privcidade. Esta Política de Privacidade vem a explicar a maneira pela qual Textos Grátis coleta, usa e divulgação as informações pessoais recebidas por você ao usar o site Textos Grátis e seu conteúdo, informação e serviços.
+
+Consentimento dos Usuários. AO ACESSAR ESTE SITE, SITUADO NO URL HTTP://WWW.TEXTOSGRATIS.COM.BR E/OU EM OUTRO LOCAL FORNECIDO POR TEXTOS GRÁTIS (O “SITE”), VOCÊ ESTÁ EXPRESSANDO, CONFIRMANDO E FORNECENDO SEU CONSENTIMENTO À COLETA DA INFORMAÇÃO, USO DA INFORMAÇÃO, E OUTROS PROCEDIMENTOS DESCRITOS NA POLÍTICA DE PRIVACIDADE ABAIXO. Ao Textos Grátis se reserva o direito de modificar esta política a qualquer momento, sem aviso prévio, ao substituir por uma nova política de privacidade neste mesmo loca. A coleta, o uso e a divulgação de sua informação pessoal por Textos Grátis serão decidios pela versão desta política no ato. Por favor verifique esta página de tempo em tempo. Entre em contato por favor se tiver quaisquer perguntas sobre nossa política de privacidade. Coleta e uso da informação. Para que se possa acessar certas áreas ou páginas (como cadastro do autor, enviar a um amigo, etc.) e se cadastrar como usuário do site, este site requere algumas informações pessoais, tais como seu nome, número de telefone e e-mail. Estas informações são usadas por nós para que possamos lhe contactar no evento de mandar novas informações sobre nossa emprsa e serviços, ou para uso comercial e/ou uso interno tal como pesquisa de mercado para melhor entender os dados demográficos dos visitantes do nosso site e de clientes potenciais. Possamos vir a compartilhar esta informação com parcerias autorizadas ou a terceiros que atuam em nosso nome, porém de nenhuma outra forma daremos ou venderemos qualquer informação coletada no site para compradores externos.
+
+Rastreamento do Usuário. Este site tem um sistem de rastreamento, onde as atividades de cada usuário único são monitoradas. Isto acontece mesmo sem o usuário estar cadastrado no site, porém enquanto o usuário não preencher dados de cadastro ou se inscrever para receber newsletter, seus dados permaneceram anônimos e não teremos como saber sua identidade. Caso o usuário se cadastrar no site, usaremos os dados de rastreamento para identificar atividades passadas e futuras no site, incluindo as atividades anteriores ao cadastro. Isto inclui as páginas que foram visualizadas. O rastreamento do usuário também nos permite saber como o usuário chegou ao site (se através de sites de busca ou links). O motivo pelo qual usamos o rastreamento de usuário é de analisar as ações dos usuários para poder então melhorar a navegação no site, assim como para entender melhor as prioridades e interesses de nossos clientes potenciais e parcerias, para melhor responder às suas necessidades e aumentar a eficiência dos nossos processos de vendas e marketing.
+
+Uso de Cookies. “Cookie” é um pequeno artigo de texto transferido de um site ao computador que está visualizando o site. Mesmo se você não se cadastra no site, ao visitar o site pela primeira vez (ou nas próximas visitas, caso apague seus “cookies”), o cookie é salvo no seu computador, o que permite que você seja automaticamente reconhecido pelo site. Isto é feito por motivos técnicos, entre outros para ativar o “rastreamento do usuário” acima descrito. Além do mais, para a sua conveniência, o “cookie” permite preenchimento automático de formulários no site. poupando lhe o trabalho de inserir a mesma informação nos formulários de cadastro em áreas que exigem estas informações. Não obstante, os prórprios “cookies” não podem ser usados para descobrir a identidade do usuário. A única informação pessoal que temos é a que o usuário nos inofrma. Se preferir não receber ‘cookies”, modifique a configuração do seu browser para recusar “cookies”. Além do mais, você pode apagar os cookies que já estão no seu comptuador.
+
+Endereços Do Internet Protocol. Nós coletamos os endereços do IP de todos os visitantes a nosso local. Nós usamos seu IP address a fim administrar o local, ajudamo-lo diagnosticar problemas com nosso usuário, para recolher a informação demográfica larga, e para do “seguir usuário” descrito acima.
+
+Hyperlinks. Este local contem hyperlinks a outros locais da correia fotorreceptora. Esta política de privacidade aplica-se somente a este local e não a todos os outros locais, inclusive os locais alcançados pelo hyperlink deste local. Textos Grátis não tem nenhuma responsabilidade, responsabilidade para, ou controle sobre aqueles outros locais da correia fotorreceptora ou recursos de Internet ou seus coleção, uso e divulgação de sua informação pessoal, nem tem-na todo o controle sobre, as políticas de privacidade de alguns destes locais. Quando você sai de nosso local, incluindo ligando do local a um outro local, você deve ler a política de privacidade, se existirem, desde que por tal local.
+
+A lei aplicável e o jurisdição exclusivo para estabelecir todas as disputas em relação ao uso do local serão as leis e o jurisdição do estado de Israel de acordo com as provisões então da política de fato.
+
+Textos Grátis acumulará e processar sua informação pessoal nos EUA, Israel ou, do tempo ao tempo, em outras posições nele é descrição a fim fornecê-lo com o serviço competente e eficaz.
+
+A fim ajudar em proteger a confidencialidade de sua informação pessoal, Textos Grátis aplica as proteções da segurança apropriadas à sensibilidade da informação. Entretanto, na luz da natureza de tecnologias do Internet, a segurança e os riscos da privacidade não podem ser eliminados e, conseqüentemente, Textos Grátis não pode garantir que sua informação pessoal não estará divulgada nas maneiras descritas não de outra maneira nesta política.</value>
+  </data>
+  <data name="longTextTermsOfUse" xml:space="preserve">
+    <value>Termos de Uso
+
+
+
+Termos de Uso do Autor 
+1.Você confirma que é o autor original de cada texto que submete. Se você contratou um ghostwriter (escritor fantasma), você confirma que tem direitos exclusivos sobre cada texto que submete.
+2.Não há nenhuma garantia que seus textos serão aceitos para publicação em nosso diretório. Cabe a nós decidir se seus textos serão incluídos ou não. Caso publicados, nos reservamos o direito de remover qualquer texto a qualquer hora.
+3.Nos reservamos o direito de escolher uma categoria mais apropriada para seus textos caso acharmos que foram classificados de forma incorreta.
+4.Ao submeter textos no site TextosGrátis.com.br, você nos permite: ◦Publicar seu texto no site TextosGrátis.com.br e em qualquer diretório dos textos relacionado a nós.
+◦Publicar seu texto no formato de RSS para divulgação em outros sites.
+◦Publicar seu texto em nossos newsletters.
+
+5.Você concorda que TextosGrátis.com.br é um serviço gratuito para autores e publicações. Você não será pago para submeter seus textos em nosso site e você não será pago se e quando seus textos forem publicados. Você receberá todo o crédito para seu trabalho e seu perfil do autor ficará intacto.
+6.Você concorda não incluir links de programas de afiliados no seu texto. Se você está tentando promover um programas de afiliados, por favor crie seu próprio domínio e inclua o link no perfil do autor.
+7.TextosGrátis.com.br poderá a qualquer momento traduzir seu texto para várias línguas para nossos sites. Seu texto remanescerá completo com o seu perfil do autor intacto.
+8.Nos reservamos o direito de incluir propagandas em páginas contendo seus textos.
+
+Termos de Uso de Publicação 
+1.Você não deve remover “TextosGrátis.com.br” de cada texto que você escolhe publicar (trabalhamos arduamente para publicá-los).
+2.Você deve respeitar os direitos autorais de cada autor cujos textos você deseja publicar. Isto inclui 1. Perfil do Autor, 2. Qualquer links que o autor incluiu.
+3.Você não deve modificar, editar, ou reescrever qualquer parte texto do  que você deseja publicar.
+4.Você deve concordar em manter os links “ativos” de modo que os usuários possam clicar no link e chegar à destinada página.
+5.Você concorda em nunca usar os textos obtidos no site TextosGrátis.com.br em qualquer foram de Spam ou e-mail não solicitado.
+6.Você concorda em não publicar textos em sites de ódio, racismo, softwares ilegais, pornografia, ou qualquer outro material ilegal.
+7.Você concorda em nunca vender textos obtidos em nosso diretório sem antes receber o consentimento escrito do autor. Isto inclui vender textos individualmente ou em massa.
+
+Aviso Legal
+
+Você concorda que TextosGrátis.com.br não é responsável pela exatidão dos dados de qualquer texto no site ou em sites em parceria. TextosGrátis.com.br nada mais do que um ponto de encontro entre autores e publicações. Se você tiver um problema com alguém roubando seu trabalho original, por favor entre em contato conosco e iremos remover o texto em questão imediatamente.
+ TextosGrátis.com.br não endossa nenhum autor, site, ou produto mencionados em qualquer texto que não foi escrito pela equipe do site TextosGrátis.com.br. Os textos publicados pelo site TextosGrátis.com.br não são para serem usados como opinião legal, médica ou de qualquer outro tipo. Todos os textos tem o propósito de informação.</value>
+  </data>
+  <data name="longTextCopyright" xml:space="preserve">
+    <value>Criar um texto para COPYRIGHT
+
+
+
+Termos de Uso do Autor 
+1.Você confirma que é o autor original de cada texto que submete. Se você contratou um ghostwriter (escritor fantasma), você confirma que tem direitos exclusivos sobre cada texto que submete.
+2.Não há nenhuma garantia que seus textos serão aceitos para publicação em nosso diretório. Cabe a nós decidir se seus textos serão incluídos ou não. Caso publicados, nos reservamos o direito de remover qualquer texto a qualquer hora.
+3.Nos reservamos o direito de escolher uma categoria mais apropriada para seus textos caso acharmos que foram classificados de forma incorreta.
+4.Ao submeter textos no site TextosGrátis.com.br, você nos permite: ◦Publicar seu texto no site TextosGrátis.com.br e em qualquer diretório dos textos relacionado a nós.
+◦Publicar seu texto no formato de RSS para divulgação em outros sites.
+◦Publicar seu texto em nossos newsletters.
+
+5.Você concorda que TextosGrátis.com.br é um serviço gratuito para autores e publicações. Você não será pago para submeter seus textos em nosso site e você não será pago se e quando seus textos forem publicados. Você receberá todo o crédito para seu trabalho e seu perfil do autor ficará intacto.
+6.Você concorda não incluir links de programas de afiliados no seu texto. Se você está tentando promover um programas de afiliados, por favor crie seu próprio domínio e inclua o link no perfil do autor.
+7.TextosGrátis.com.br poderá a qualquer momento traduzir seu texto para várias línguas para nossos sites. Seu texto remanescerá completo com o seu perfil do autor intacto.
+8.Nos reservamos o direito de incluir propagandas em páginas contendo seus textos.
+
+Termos de Uso de Publicação 
+1.Você não deve remover “TextosGrátis.com.br” de cada texto que você escolhe publicar (trabalhamos arduamente para publicá-los).
+2.Você deve respeitar os direitos autorais de cada autor cujos textos você deseja publicar. Isto inclui 1. Perfil do Autor, 2. Qualquer links que o autor incluiu.
+3.Você não deve modificar, editar, ou reescrever qualquer parte texto do  que você deseja publicar.
+4.Você deve concordar em manter os links “ativos” de modo que os usuários possam clicar no link e chegar à destinada página.
+5.Você concorda em nunca usar os textos obtidos no site TextosGrátis.com.br em qualquer foram de Spam ou e-mail não solicitado.
+6.Você concorda em não publicar textos em sites de ódio, racismo, softwares ilegais, pornografia, ou qualquer outro material ilegal.
+7.Você concorda em nunca vender textos obtidos em nosso diretório sem antes receber o consentimento escrito do autor. Isto inclui vender textos individualmente ou em massa.
+
+Aviso Legal
+
+Você concorda que TextosGrátis.com.br não é responsável pela exatidão dos dados de qualquer texto no site ou em sites em parceria. TextosGrátis.com.br nada mais do que um ponto de encontro entre autores e publicações. Se você tiver um problema com alguém roubando seu trabalho original, por favor entre em contato conosco e iremos remover o texto em questão imediatamente.
+ TextosGrátis.com.br não endossa nenhum autor, site, ou produto mencionados em qualquer texto que não foi escrito pela equipe do site TextosGrátis.com.br. Os textos publicados pelo site TextosGrátis.com.br não são para serem usados como opinião legal, médica ou de qualquer outro tipo. Todos os textos tem o propósito de informação.</value>
+  </data>
+  <data name="longTextCredits" xml:space="preserve">
+    <value>Criar um texto para CREDITS
+
+
+
+Termos de Uso do Autor 
+1.Você confirma que é o autor original de cada texto que submete. Se você contratou um ghostwriter (escritor fantasma), você confirma que tem direitos exclusivos sobre cada texto que submete.
+2.Não há nenhuma garantia que seus textos serão aceitos para publicação em nosso diretório. Cabe a nós decidir se seus textos serão incluídos ou não. Caso publicados, nos reservamos o direito de remover qualquer texto a qualquer hora.
+3.Nos reservamos o direito de escolher uma categoria mais apropriada para seus textos caso acharmos que foram classificados de forma incorreta.
+4.Ao submeter textos no site TextosGrátis.com.br, você nos permite: ◦Publicar seu texto no site TextosGrátis.com.br e em qualquer diretório dos textos relacionado a nós.
+◦Publicar seu texto no formato de RSS para divulgação em outros sites.
+◦Publicar seu texto em nossos newsletters.
+
+5.Você concorda que TextosGrátis.com.br é um serviço gratuito para autores e publicações. Você não será pago para submeter seus textos em nosso site e você não será pago se e quando seus textos forem publicados. Você receberá todo o crédito para seu trabalho e seu perfil do autor ficará intacto.
+6.Você concorda não incluir links de programas de afiliados no seu texto. Se você está tentando promover um programas de afiliados, por favor crie seu próprio domínio e inclua o link no perfil do autor.
+7.TextosGrátis.com.br poderá a qualquer momento traduzir seu texto para várias línguas para nossos sites. Seu texto remanescerá completo com o seu perfil do autor intacto.
+8.Nos reservamos o direito de incluir propagandas em páginas contendo seus textos.
+
+Termos de Uso de Publicação 
+1.Você não deve remover “TextosGrátis.com.br” de cada texto que você escolhe publicar (trabalhamos arduamente para publicá-los).
+2.Você deve respeitar os direitos autorais de cada autor cujos textos você deseja publicar. Isto inclui 1. Perfil do Autor, 2. Qualquer links que o autor incluiu.
+3.Você não deve modificar, editar, ou reescrever qualquer parte texto do  que você deseja publicar.
+4.Você deve concordar em manter os links “ativos” de modo que os usuários possam clicar no link e chegar à destinada página.
+5.Você concorda em nunca usar os textos obtidos no site TextosGrátis.com.br em qualquer foram de Spam ou e-mail não solicitado.
+6.Você concorda em não publicar textos em sites de ódio, racismo, softwares ilegais, pornografia, ou qualquer outro material ilegal.
+7.Você concorda em nunca vender textos obtidos em nosso diretório sem antes receber o consentimento escrito do autor. Isto inclui vender textos individualmente ou em massa.
+
+Aviso Legal
+
+Você concorda que TextosGrátis.com.br não é responsável pela exatidão dos dados de qualquer texto no site ou em sites em parceria. TextosGrátis.com.br nada mais do que um ponto de encontro entre autores e publicações. Se você tiver um problema com alguém roubando seu trabalho original, por favor entre em contato conosco e iremos remover o texto em questão imediatamente.
+ TextosGrátis.com.br não endossa nenhum autor, site, ou produto mencionados em qualquer texto que não foi escrito pela equipe do site TextosGrátis.com.br. Os textos publicados pelo site TextosGrátis.com.br não são para serem usados como opinião legal, médica ou de qualquer outro tipo. Todos os textos tem o propósito de informação.</value>
+  </data>
+  <data name="textPanel" xml:space="preserve">
+    <value>Painel</value>
+  </data>
+  <data name="longTextPanel" xml:space="preserve">
+    <value>Você tem um visão geral sobre seus Fases e você pode gerar seu e-book</value>
+  </data>
+  <data name="textStep01" xml:space="preserve">
+    <value>Fase 01</value>
+  </data>
+  <data name="textStep02" xml:space="preserve">
+    <value>Fase 02</value>
+  </data>
+  <data name="textStep03" xml:space="preserve">
+    <value>Fase 03</value>
+  </data>
+  <data name="textStep04" xml:space="preserve">
+    <value>Fase 04</value>
+  </data>
+  <data name="textStep05" xml:space="preserve">
+    <value>Fase 05</value>
+  </data>
+  <data name="textStep06" xml:space="preserve">
+    <value>Fase 06</value>
+  </data>
+  <data name="textStep07" xml:space="preserve">
+    <value>Fase 07</value>
+  </data>
+  <data name="textStep08" xml:space="preserve">
+    <value>Fase 08</value>
+  </data>
+  <data name="textAnswers" xml:space="preserve">
+    <value>Respostas</value>
+  </data>
+  <data name="textStep09" xml:space="preserve">
+    <value>Fase 09</value>
+  </data>
+  <data name="textStep10" xml:space="preserve">
+    <value>Fase 10</value>
+  </data>
+  <data name="textStep11" xml:space="preserve">
+    <value>Fase 11</value>
+  </data>
+  <data name="textStep12" xml:space="preserve">
+    <value>Fase 12</value>
+  </data>
+  <data name="textStep13" xml:space="preserve">
+    <value>Fase 13</value>
+  </data>
+  <data name="textStep14" xml:space="preserve">
+    <value>Fase 14</value>
+  </data>
+  <data name="textStep15" xml:space="preserve">
+    <value>Fase 15</value>
+  </data>
+  <data name="textUpdated" xml:space="preserve">
+    <value>Atualizado em</value>
+  </data>
+  <data name="textAgree" xml:space="preserve">
+    <value>Concordo</value>
+  </data>
+  <data name="textDisagree" xml:space="preserve">
+    <value>Discordo</value>
+  </data>
+  <data name="textCharacteristics" xml:space="preserve">
+    <value>Características</value>
+  </data>
+  <data name="textNegative" xml:space="preserve">
+    <value>Negativo</value>
+  </data>
+  <data name="textNeutral" xml:space="preserve">
+    <value>Neutro</value>
+  </data>
+  <data name="textPositive" xml:space="preserve">
+    <value>Positivo</value>
+  </data>
+  <data name="textProgress" xml:space="preserve">
+    <value>Progresso</value>
+  </data>
+  <data name="textResults" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="textSelect" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="textFinalAnalysis" xml:space="preserve">
+    <value>Análise final</value>
+  </data>
+  <data name="longtextFinalAnalysisStep02Incomplete" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep02Negative" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep02Neutral" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep02Positive" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="textIncomplete" xml:space="preserve">
+    <value>Incompleto</value>
+  </data>
+  <data name="longTextError" xml:space="preserve">
+    <value>blablabla  blablabla   blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla blablabla  blablabla </value>
+  </data>
+  <data name="longtextFinalAnalysisStep03Incomplete" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla </value>
+  </data>
+  <data name="longtextFinalAnalysisStep03Negative" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep03Neutral" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep03Positive" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep04Incomplete" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla </value>
+  </data>
+  <data name="longtextFinalAnalysisStep04Negative" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep04Neutral" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep04Positive" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep05Incomplete" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla </value>
+  </data>
+  <data name="longtextFinalAnalysisStep05Negative" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep05Neutral" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="longtextFinalAnalysisStep05Positive" xml:space="preserve">
+    <value>blablabla blablabla blablabla blablabla blablabla blablabla blablabla  blablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla blablabla blablabla blablabla blablabla blablabla blablablablablabla</value>
+  </data>
+  <data name="textAnalysis" xml:space="preserve">
+    <value>Análises</value>
+  </data>
+  <data name="textAnswerHigh" xml:space="preserve">
+    <value>Alto</value>
+  </data>
+  <data name="textAnswerLow" xml:space="preserve">
+    <value>Baixo</value>
+  </data>
+  <data name="textAnswerMedium" xml:space="preserve">
+    <value>Médio</value>
+  </data>
+  <data name="textBirthCity" xml:space="preserve">
+    <value>Cidade onde você nasceu</value>
+  </data>
+  <data name="textBirthRegion" xml:space="preserve">
+    <value>Região onde você nasceu</value>
+  </data>
+  <data name="textCountryLive" xml:space="preserve">
+    <value>País onde você vive</value>
+  </data>
+  <data name="textLiveCity" xml:space="preserve">
+    <value>Cidade onde você vive</value>
+  </data>
+  <data name="textLiveRegion" xml:space="preserve">
+    <value>Região onde você vive</value>
+  </data>
+  <data name="textPlaces" xml:space="preserve">
+    <value>Lugares</value>
+  </data>
+  <data name="textAchivements" xml:space="preserve">
+    <value>Conquistas</value>
+  </data>
+  <data name="textPersonalData" xml:space="preserve">
+    <value>Dados pessoais</value>
+  </data>
+  <data name="typeHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="typeWork" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="textHaveAuto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="textHaveBicycle" xml:space="preserve">
+    <value>Bicycle</value>
+  </data>
+  <data name="textHaveBrother" xml:space="preserve">
+    <value>Brother</value>
+  </data>
+  <data name="textHaveMobilePhone" xml:space="preserve">
+    <value>MobilePhone</value>
+  </data>
+  <data name="textHaveComputer" xml:space="preserve">
+    <value>Computer</value>
+  </data>
+  <data name="textHaveDaugther" xml:space="preserve">
+    <value>Daugther</value>
+  </data>
+  <data name="textHaveEletricalEnergy" xml:space="preserve">
+    <value>EletricalEnergy</value>
+  </data>
+  <data name="textHaveFamily" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="textHaveFather" xml:space="preserve">
+    <value>Father</value>
+  </data>
+  <data name="textHaveFriends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="textHaveGrandf" xml:space="preserve">
+    <value>Grandf</value>
+  </data>
+  <data name="textHaveGrandm" xml:space="preserve">
+    <value>Grandm</value>
+  </data>
+  <data name="textHaveInternet" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="textHaveMobphone" xml:space="preserve">
+    <value>Mobphone</value>
+  </data>
+  <data name="textHaveMother" xml:space="preserve">
+    <value>Mother</value>
+  </data>
+  <data name="textHaveMotorcycle" xml:space="preserve">
+    <value>Motorcycle</value>
+  </data>
+  <data name="textHavePlane" xml:space="preserve">
+    <value>Plane</value>
+  </data>
+  <data name="textHaveSanitation" xml:space="preserve">
+    <value>Sanitation</value>
+  </data>
+  <data name="textHaveShip" xml:space="preserve">
+    <value>Ship</value>
+  </data>
+  <data name="textHaveSister" xml:space="preserve">
+    <value>Sister</value>
+  </data>
+  <data name="textHaveSon" xml:space="preserve">
+    <value>Son</value>
+  </data>
+  <data name="textHaveWater" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="textHealthAids" xml:space="preserve">
+    <value>Aids</value>
+  </data>
+  <data name="textHealthCancer" xml:space="preserve">
+    <value>Cancer</value>
+  </data>
+  <data name="textHealthCardiac" xml:space="preserve">
+    <value>Cardiac</value>
+  </data>
+  <data name="textHealthDepression" xml:space="preserve">
+    <value>Depression</value>
+  </data>
+  <data name="textHealthDiabetics" xml:space="preserve">
+    <value>Diabetics</value>
+  </data>
+  <data name="textHealthPlan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="textHealthPressure" xml:space="preserve">
+    <value>Pressure</value>
+  </data>
+  <data name="textHealthProblem" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="textLifePlan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="textRetirementPlan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="textSkinColour" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="textTypeHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="textTypeWork" xml:space="preserve">
+    <value>Work</value>
+  </data>
+</root>

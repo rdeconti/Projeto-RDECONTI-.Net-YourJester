@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1EC6531-8A7A-4E85-8A24-E08C09BDC5FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YourJester</RootNamespace>
+    <AssemblyName>YourJester</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <CodeAnalysisRuleSet>YourJester.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>YourJester.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.4.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.15.1.4.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.EntityDataSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.EntityDataSource.6.0.0\lib\net40\Microsoft.AspNet.EntityDataSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Samples.ImageOptimizationFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetSprites-Core.0.4\lib\Microsoft.Web.Samples.ImageOptimizationFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Samples.ImageSprite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetSprites-WebFormsControl.0.4\lib\Microsoft.Web.Samples.ImageSprite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Web.6.9.7\lib\net45\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="PresentationFramework.AeroLite" />
+    <Reference Include="PresentationFramework.Classic" />
+    <Reference Include="PresentationFramework.Luna" />
+    <Reference Include="PresentationFramework.Royale" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Spatial, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Spatial.5.7.0\lib\net40\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Partners.xml" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Gat.Controls.OpenDialog.dll" />
+    <Content Include="bin\Interop.FindNetPrintersLib.dll" />
+    <Content Include="bin\Microsoft.AspNet.EntityDataSource.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.Samples.ImageOptimizationFramework.dll" />
+    <Content Include="bin\Microsoft.Web.Samples.ImageSprite.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\mysql.data.entity.EF6.dll" />
+    <Content Include="bin\MySql.Web.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebMatrix.Data.dll" />
+    <Content Include="bin\WebMatrix.Data.xml" />
+    <Content Include="bin\WebMatrix.WebData.dll" />
+    <Content Include="bin\WebMatrix.WebData.xml" />
+    <Content Include="bin\YourJester.dll" />
+    <Content Include="bin\YourJester.pdb" />
+    <Content Include="Boostrap example\404.html" />
+    <Content Include="Boostrap example\about-us.html" />
+    <Content Include="Boostrap example\blog-item.html" />
+    <Content Include="Boostrap example\blog.html" />
+    <Content Include="Boostrap example\contact-us.html" />
+    <Content Include="Boostrap example\index.html" />
+    <Content Include="Boostrap example\portfolio.html" />
+    <Content Include="Boostrap example\pricing.html" />
+    <Content Include="Boostrap example\services.html" />
+    <Content Include="Boostrap example\shortcodes.html" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\backgrounds\bg_09.jpg" />
+    <Content Include="Images\backgrounds_new\bg_35.jpg" />
+    <Content Include="Images\backgrounds_new\bg_01.jpg" />
+    <Content Include="Images\backgrounds_new\bg_02.jpg" />
+    <Content Include="Images\backgrounds_new\bg_03.jpg" />
+    <Content Include="Images\backgrounds_new\bg_04.jpg" />
+    <Content Include="Images\backgrounds_new\bg_05.jpg" />
+    <Content Include="Images\backgrounds_new\bg_06.jpg" />
+    <Content Include="Images\backgrounds_new\bg_07.jpg" />
+    <Content Include="Images\backgrounds_new\bg_08.jpg" />
+    <Content Include="Images\backgrounds_new\bg_10.jpg" />
+    <Content Include="Images\backgrounds_new\bg_13.jpg" />
+    <Content Include="Images\backgrounds_new\bg_14.jpg" />
+    <Content Include="Images\backgrounds_new\bg_15.jpg" />
+    <Content Include="Images\backgrounds_new\bg_16.jpg" />
+    <Content Include="Images\backgrounds_new\bg_18.jpg" />
+    <Content Include="Images\backgrounds_new\bg_19.jpg" />
+    <Content Include="Images\backgrounds_new\bg_20.jpg" />
+    <Content Include="Images\backgrounds_new\bg_21.jpg" />
+    <Content Include="Images\backgrounds_new\bg_22.jpg" />
+    <Content Include="Images\backgrounds_new\bg_23.jpg" />
+    <Content Include="Images\backgrounds_new\bg_32.jpg" />
+    <Content Include="Images\backgrounds_new\bg_33.jpg" />
+    <Content Include="Images\backgrounds_new\bg_34.jpg" />
+    <Content Include="Images\backgrounds_new\bg_42.jpg" />
+    <Content Include="Images\backgrounds_new\bg_43.jpg" />
+    <Content Include="Images\backgrounds_new\bg_44.jpg" />
+    <Content Include="Images\backgrounds_new\bg_45.jpg" />
+    <Content Include="Images\backgrounds_new\bg_99.jpg" />
+    <Content Include="Images\flags\arab640.png" />
+    <Content Include="Images\flags\china640.png" />
+    <Content Include="Images\flags\france640.png" />
+    <Content Include="Images\flags\germany640.png" />
+    <Content Include="Images\flags\italy640.png" />
+    <Content Include="Images\flags\japan640.png" />
+    <Content Include="Images\flags\portugal640.png" />
+    <Content Include="Images\flags\spain640.png" />
+    <Content Include="Images\flags\england640.png" />
+    <Content Include="Images\Icons\locked.jpg" />
+    <Content Include="Images\Icons\smile.png" />
+    <Content Include="Images\Icons\unlocked.jpg" />
+    <Content Include="Images\logo_01.png" />
+    <Content Include="Images\home\step00_bg.jpg" />
+    <Content Include="Images\home\step01_bg.jpg" />
+    <Content Include="Images\home\step02_bg.jpg" />
+    <Content Include="Images\home\step03_bg.jpg" />
+    <Content Include="Images\home\step04_bg.jpg" />
+    <Content Include="Images\home\step05_bg.jpg" />
+    <Content Include="Images\home\step06_bg.jpg" />
+    <Content Include="Images\home\step07_bg.jpg" />
+    <Content Include="Images\home\step08_bg.jpg" />
+    <Content Include="Images\logo_04.png" />
+    <Content Include="Images\logo_02.png" />
+    <Content Include="ErrorLogException.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Angel\001.jpg" />
+    <Content Include="Images\Angel\002.jpg" />
+    <Content Include="Images\Angel\003.jpg" />
+    <Content Include="Images\Angel\004.jpg" />
+    <Content Include="Images\Angel\005.jpg" />
+    <Content Include="Images\Angel\006.jpg" />
+    <Content Include="Images\Angel\007.jpg" />
+    <Content Include="Images\Angel\008.jpg" />
+    <Content Include="Images\Angel\009.jpg" />
+    <Content Include="Images\Angel\010.jpg" />
+    <Content Include="Images\Angel\011.jpg" />
+    <Content Include="Images\Angel\012.jpg" />
+    <Content Include="Images\Angel\013.jpg" />
+    <Content Include="Images\Angel\014.jpg" />
+    <Content Include="Images\Angel\015.jpg" />
+    <Content Include="Images\Angel\016.jpg" />
+    <Content Include="Images\Angel\017.jpg" />
+    <Content Include="Images\Angel\018.jpg" />
+    <Content Include="Images\Angel\019.jpg" />
+    <Content Include="Images\Angel\020.jpg" />
+    <Content Include="Images\Angel\021.jpg" />
+    <Content Include="Images\Angel\022.jpg" />
+    <Content Include="Images\Angel\023.jpg" />
+    <Content Include="Images\Angel\024.jpg" />
+    <Content Include="Images\Angel\025.jpg" />
+    <Content Include="Images\Angel\026.jpg" />
+    <Content Include="Images\Angel\027.jpg" />
+    <Content Include="Images\Angel\028.jpg" />
+    <Content Include="Images\Angel\029.jpg" />
+    <Content Include="Images\Angel\030.jpg" />
+    <Content Include="Images\Angel\031.jpg" />
+    <Content Include="Images\Angel\032.jpg" />
+    <Content Include="Images\Angel\033.jpg" />
+    <Content Include="Images\Angel\034.jpg" />
+    <Content Include="Images\Angel\035.jpg" />
+    <Content Include="Images\Angel\036.jpg" />
+    <Content Include="Images\Angel\037.jpg" />
+    <Content Include="Images\Angel\038.jpg" />
+    <Content Include="Images\Angel\039.jpg" />
+    <Content Include="Images\Angel\040.jpg" />
+    <Content Include="Images\Angel\041.jpg" />
+    <Content Include="Images\Angel\042.jpg" />
+    <Content Include="Images\Angel\043.jpg" />
+    <Content Include="Images\Angel\044.jpg" />
+    <Content Include="Images\Angel\045.jpg" />
+    <Content Include="Images\Angel\046.jpg" />
+    <Content Include="Images\Angel\047.jpg" />
+    <Content Include="Images\Angel\048.jpg" />
+    <Content Include="Images\Angel\049.jpg" />
+    <Content Include="Images\Angel\050.jpg" />
+    <Content Include="Images\Angel\051.jpg" />
+    <Content Include="Images\Angel\052.jpg" />
+    <Content Include="Images\Angel\053.jpg" />
+    <Content Include="Images\Angel\054.jpg" />
+    <Content Include="Images\Angel\055.jpg" />
+    <Content Include="Images\Angel\056.jpg" />
+    <Content Include="Images\Angel\057.jpg" />
+    <Content Include="Images\Angel\058.jpg" />
+    <Content Include="Images\Angel\059.jpg" />
+    <Content Include="Images\Angel\060.jpg" />
+    <Content Include="Images\Angel\061.jpg" />
+    <Content Include="Images\Angel\062.jpg" />
+    <Content Include="Images\Angel\063.jpg" />
+    <Content Include="Images\Angel\064.jpg" />
+    <Content Include="Images\Angel\065.jpg" />
+    <Content Include="Images\Angel\066.jpg" />
+    <Content Include="Images\Angel\067.jpg" />
+    <Content Include="Images\Angel\068.jpg" />
+    <Content Include="Images\Angel\069.jpg" />
+    <Content Include="Images\Angel\070.jpg" />
+    <Content Include="Images\Angel\071.jpg" />
+    <Content Include="Images\Icons\Application.bmp" />
+    <Content Include="Images\application.jpg" />
+    <Content Include="Images\Comrey\001.jpg" />
+    <Content Include="Images\Comrey\002.jpg" />
+    <Content Include="Images\Comrey\003.jpg" />
+    <Content Include="Images\Comrey\004.jpg" />
+    <Content Include="Images\Comrey\005.jpg" />
+    <Content Include="Images\Comrey\006.jpg" />
+    <Content Include="Images\Comrey\007.jpg" />
+    <Content Include="Images\Comrey\008.jpg" />
+    <Content Include="Images\Comrey\009.jpg" />
+    <Content Include="Images\Comrey\010.jpg" />
+    <Content Include="Images\Dayofborn\00.jpg" />
+    <Content Include="Images\Dayofborn\01.jpg" />
+    <Content Include="Images\Dayofborn\02.jpg" />
+    <Content Include="Images\Dayofborn\03.jpg" />
+    <Content Include="Images\Dayofborn\04.jpg" />
+    <Content Include="Images\Dayofborn\05.jpg" />
+    <Content Include="Images\Dayofborn\06.jpg" />
+    <Content Include="Images\Dayofborn\07.jpg" />
+    <Content Include="Images\Dayofborn\08.jpg" />
+    <Content Include="Images\Dayofborn\09.jpg" />
+    <Content Include="Images\Dayofborn\10.jpg" />
+    <Content Include="Images\Dayofborn\11.jpg" />
+    <Content Include="Images\Dayofborn\12.jpg" />
+    <Content Include="Images\Dayofborn\13.jpg" />
+    <Content Include="Images\Dayofborn\14.jpg" />
+    <Content Include="Images\Dayofborn\15.jpg" />
+    <Content Include="Images\Dayofborn\16.jpg" />
+    <Content Include="Images\Dayofborn\17.jpg" />
+    <Content Include="Images\Dayofborn\18.jpg" />
+    <Content Include="Images\Dayofborn\19.jpg" />
+    <Content Include="Images\Dayofborn\20.jpg" />
+    <Content Include="Images\Dayofborn\21.jpg" />
+    <Content Include="Images\Dayofborn\22.jpg" />
+    <Content Include="Images\Dayofborn\23.jpg" />
+    <Content Include="Images\Dayofborn\24.jpg" />
+    <Content Include="Images\Dayofborn\25.jpg" />
+    <Content Include="Images\Dayofborn\26.jpg" />
+    <Content Include="Images\Dayofborn\27.jpg" />
+    <Content Include="Images\Dayofborn\28.jpg" />
+    <Content Include="Images\Dayofborn\29.jpg" />
+    <Content Include="Images\Dayofborn\30.jpg" />
+    <Content Include="Images\Dayofborn\31.jpg" />
+    <Content Include="Images\donations.jpg" />
+    <Content Include="Images\email.jpg" />
+    <Content Include="Images\Hipocrates\001.jpg" />
+    <Content Include="Images\Hipocrates\002.jpg" />
+    <Content Include="Images\Hipocrates\003.jpg" />
+    <Content Include="Images\Hipocrates\004.jpg" />
+    <Content Include="Images\Icons\Back.bmp" />
+    <Content Include="Images\Icons\Bad mark.bmp" />
+    <Content Include="Images\Icons\Dollar.bmp" />
+    <Content Include="Images\Icons\E-mail.bmp" />
+    <Content Include="Images\Icons\Exit.bmp" />
+    <Content Include="Images\Icons\Favourites.bmp" />
+    <Content Include="Images\Icons\Find.bmp" />
+    <Content Include="Images\Icons\First record.bmp" />
+    <Content Include="Images\Icons\First.bmp" />
+    <Content Include="Images\Icons\Forward.bmp" />
+    <Content Include="Images\Icons\Go back.bmp" />
+    <Content Include="Images\Icons\Go forward.bmp" />
+    <Content Include="Images\Icons\Good mark.bmp" />
+    <Content Include="Images\Icons\Home.bmp" />
+    <Content Include="Images\Icons\Last record.bmp" />
+    <Content Include="Images\Icons\Last.bmp" />
+    <Content Include="Images\Icons\List.bmp" />
+    <Content Include="Images\Icons\Lock.bmp" />
+    <Content Include="Images\Icons\Question.bmp" />
+    <Content Include="Images\Icons\Save.bmp" />
+    <Content Include="Images\Icons\Shopping cart.bmp" />
+    <Content Include="Images\Icons\Unlock.bmp" />
+    <Content Include="Images\Icons\Yes.bmp" />
+    <Content Include="Images\Jester\Jester8.png" />
+    <Content Include="Images\Numerology\000.jpg" />
+    <Content Include="Images\Numerology\001.jpg" />
+    <Content Include="Images\Numerology\002.jpg" />
+    <Content Include="Images\Numerology\003.jpg" />
+    <Content Include="Images\Numerology\004.jpg" />
+    <Content Include="Images\Numerology\005.jpg" />
+    <Content Include="Images\Numerology\006.jpg" />
+    <Content Include="Images\Numerology\007.jpg" />
+    <Content Include="Images\Numerology\008.jpg" />
+    <Content Include="Images\Numerology\009.jpg" />
+    <Content Include="Images\Ocidental\01.jpg" />
+    <Content Include="Images\Ocidental\02.jpg" />
+    <Content Include="Images\Ocidental\03.jpg" />
+    <Content Include="Images\Ocidental\04.jpg" />
+    <Content Include="Images\Ocidental\05.jpg" />
+    <Content Include="Images\Ocidental\06.jpg" />
+    <Content Include="Images\Ocidental\07.jpg" />
+    <Content Include="Images\Ocidental\08.jpg" />
+    <Content Include="Images\Ocidental\09.jpg" />
+    <Content Include="Images\Ocidental\10.jpg" />
+    <Content Include="Images\Ocidental\11.jpg" />
+    <Content Include="Images\Ocidental\12.jpg" />
+    <Content Include="Images\Angel\72.jpg" />
+    <Content Include="Images\Aztec\01.jpg" />
+    <Content Include="Images\Aztec\02.jpg" />
+    <Content Include="Images\Aztec\03.jpg" />
+    <Content Include="Images\Aztec\04.jpg" />
+    <Content Include="Images\Aztec\05.jpg" />
+    <Content Include="Images\Aztec\06.jpg" />
+    <Content Include="Images\Aztec\07.jpg" />
+    <Content Include="Images\Aztec\08.jpg" />
+    <Content Include="Images\Aztec\09.jpg" />
+    <Content Include="Images\Aztec\10.jpg" />
+    <Content Include="Images\Aztec\11.jpg" />
+    <Content Include="Images\Aztec\12.jpg" />
+    <Content Include="Images\Aztec\13.jpg" />
+    <Content Include="Images\Aztec\14.jpg" />
+    <Content Include="Images\Aztec\15.jpg" />
+    <Content Include="Images\Aztec\16.jpg" />
+    <Content Include="Images\Aztec\17.jpg" />
+    <Content Include="Images\Aztec\18.jpg" />
+    <Content Include="Images\Aztec\19.jpg" />
+    <Content Include="Images\Aztec\20.jpg" />
+    <Content Include="Images\Brazilian\01.jpg" />
+    <Content Include="Images\Brazilian\02.jpg" />
+    <Content Include="Images\Brazilian\03.jpg" />
+    <Content Include="Images\Brazilian\04.jpg" />
+    <Content Include="Images\Brazilian\05.jpg" />
+    <Content Include="Images\Brazilian\06.jpg" />
+    <Content Include="Images\Brazilian\07.jpg" />
+    <Content Include="Images\Brazilian\08.jpg" />
+    <Content Include="Images\Brazilian\09.jpg" />
+    <Content Include="Images\Brazilian\10.jpg" />
+    <Content Include="Images\Brazilian\11.jpg" />
+    <Content Include="Images\Brazilian\12.jpg" />
+    <Content Include="Images\Celtic\01.jpg" />
+    <Content Include="Images\Celtic\02.jpg" />
+    <Content Include="Images\Celtic\03.jpg" />
+    <Content Include="Images\Celtic\04.jpg" />
+    <Content Include="Images\Celtic\05.jpg" />
+    <Content Include="Images\Celtic\06.jpg" />
+    <Content Include="Images\Celtic\07.jpg" />
+    <Content Include="Images\Celtic\08.jpg" />
+    <Content Include="Images\Celtic\09.jpg" />
+    <Content Include="Images\Celtic\10.jpg" />
+    <Content Include="Images\Celtic\11.jpg" />
+    <Content Include="Images\Celtic\12.jpg" />
+    <Content Include="Images\Celtic\13.jpg" />
+    <Content Include="Images\Celtic\14.jpg" />
+    <Content Include="Images\Celtic\16.jpg" />
+    <Content Include="Images\Celtic\17.jpg" />
+    <Content Include="Images\Celtic\18.jpg" />
+    <Content Include="Images\Celtic\19.jpg" />
+    <Content Include="Images\Celtic\20.jpg" />
+    <Content Include="Images\Celtic\21.jpg" />
+    <Content Include="Images\Celtic\22.jpg" />
+    <Content Include="Images\Chinese\01.jpg" />
+    <Content Include="Images\Chinese\02.jpg" />
+    <Content Include="Images\Chinese\03.jpg" />
+    <Content Include="Images\Chinese\04.jpg" />
+    <Content Include="Images\Chinese\05.jpg" />
+    <Content Include="Images\Chinese\06.jpg" />
+    <Content Include="Images\Chinese\07.jpg" />
+    <Content Include="Images\Chinese\08.jpg" />
+    <Content Include="Images\Chinese\09.jpg" />
+    <Content Include="Images\Chinese\10.jpg" />
+    <Content Include="Images\Chinese\11.jpg" />
+    <Content Include="Images\Chinese\12.jpg" />
+    <Content Include="Images\Egyptian\01.jpg" />
+    <Content Include="Images\Egyptian\02.jpg" />
+    <Content Include="Images\Egyptian\03.jpg" />
+    <Content Include="Images\Egyptian\04.jpg" />
+    <Content Include="Images\Egyptian\05.jpg" />
+    <Content Include="Images\Egyptian\06.jpg" />
+    <Content Include="Images\Egyptian\07.jpg" />
+    <Content Include="Images\Egyptian\08.jpg" />
+    <Content Include="Images\Egyptian\09.jpg" />
+    <Content Include="Images\Egyptian\10.jpg" />
+    <Content Include="Images\Egyptian\11.jpg" />
+    <Content Include="Images\Egyptian\12.jpg" />
+    <Content Include="Images\Enneagram\Type_001_F.gif" />
+    <Content Include="Images\Enneagram\Type_001_M.gif" />
+    <Content Include="Images\Enneagram\Type_002_F.gif" />
+    <Content Include="Images\Enneagram\Type_002_M.gif" />
+    <Content Include="Images\Enneagram\Type_003_F.gif" />
+    <Content Include="Images\Enneagram\Type_003_M.gif" />
+    <Content Include="Images\Enneagram\Type_004_F.gif" />
+    <Content Include="Images\Enneagram\Type_004_M.gif" />
+    <Content Include="Images\Enneagram\Type_005_F.gif" />
+    <Content Include="Images\Enneagram\Type_005_M.gif" />
+    <Content Include="Images\Enneagram\Type_006_F.gif" />
+    <Content Include="Images\Enneagram\Type_006_M.gif" />
+    <Content Include="Images\Enneagram\Type_007_F.gif" />
+    <Content Include="Images\Enneagram\Type_007_M.gif" />
+    <Content Include="Images\Enneagram\Type_008_F.gif" />
+    <Content Include="Images\Enneagram\Type_008_M.gif" />
+    <Content Include="Images\Enneagram\Type_009_F.gif" />
+    <Content Include="Images\Enneagram\Type_009_M.gif" />
+    <Content Include="Images\error.jpg" />
+    <Content Include="Images\Gypsy\01.jpg" />
+    <Content Include="Images\Gypsy\02.jpg" />
+    <Content Include="Images\Gypsy\03.jpg" />
+    <Content Include="Images\Gypsy\04.jpg" />
+    <Content Include="Images\Gypsy\05.jpg" />
+    <Content Include="Images\Gypsy\06.jpg" />
+    <Content Include="Images\Gypsy\07.jpg" />
+    <Content Include="Images\Gypsy\08.jpg" />
+    <Content Include="Images\Gypsy\09.jpg" />
+    <Content Include="Images\Gypsy\10.jpg" />
+    <Content Include="Images\Gypsy\11.gif" />
+    <Content Include="Images\Gypsy\12.jpg" />
+    <Content Include="Images\Icons_networks\email-blue.png" />
+    <Content Include="Images\Icons_networks\facebook.png" />
+    <Content Include="Images\Icons_networks\instagram.png" />
+    <Content Include="Images\Icons_networks\linkedin.png" />
+    <Content Include="Images\Icons_networks\pinterest.png" />
+    <Content Include="Images\Icons_networks\social_facebook.png" />
+    <Content Include="Images\Icons_networks\social_google.png" />
+    <Content Include="Images\Icons_networks\social_linkedin.png" />
+    <Content Include="Images\Icons_networks\social_twitter.png" />
+    <Content Include="Images\Icons_networks\twitter.png" />
+    <Content Include="Images\Indian\01.jpg" />
+    <Content Include="Images\Indian\02.jpg" />
+    <Content Include="Images\Indian\03.jpg" />
+    <Content Include="Images\Indian\04.jpg" />
+    <Content Include="Images\Indian\05.jpg" />
+    <Content Include="Images\Indian\06.jpg" />
+    <Content Include="Images\Indian\07.jpg" />
+    <Content Include="Images\Indian\08.jpg" />
+    <Content Include="Images\Indian\09.jpg" />
+    <Content Include="Images\Indian\10.jpg" />
+    <Content Include="Images\Indian\11.jpg" />
+    <Content Include="Images\Indian\12.jpg" />
+    <Content Include="Images\Maya\01.jpg" />
+    <Content Include="Images\Maya\02.jpg" />
+    <Content Include="Images\Maya\03.jpg" />
+    <Content Include="Images\Maya\04.jpg" />
+    <Content Include="Images\Maya\05.jpg" />
+    <Content Include="Images\Maya\06.jpg" />
+    <Content Include="Images\Maya\07.jpg" />
+    <Content Include="Images\Maya\08.jpg" />
+    <Content Include="Images\Maya\09.jpg" />
+    <Content Include="Images\Maya\10.jpg" />
+    <Content Include="Images\Maya\11.jpg" />
+    <Content Include="Images\Maya\12.jpg" />
+    <Content Include="Images\Maya\13.jpg" />
+    <Content Include="Images\Shamanic\01.jpg" />
+    <Content Include="Images\Shamanic\02.jpg" />
+    <Content Include="Images\Shamanic\03.jpg" />
+    <Content Include="Images\Shamanic\04.jpg" />
+    <Content Include="Images\Shamanic\05.jpg" />
+    <Content Include="Images\Shamanic\06.jpg" />
+    <Content Include="Images\Shamanic\07.jpg" />
+    <Content Include="Images\Shamanic\08.jpg" />
+    <Content Include="Images\Shamanic\09.jpg" />
+    <Content Include="Images\Shamanic\10.jpg" />
+    <Content Include="Images\Shamanic\11.jpg" />
+    <Content Include="Images\Shamanic\12.jpg" />
+    <Content Include="Images\Step02\000.jpg" />
+    <Content Include="Images\Step02\Autocheck.png" />
+    <Content Include="Images\Step06\Projects.png" />
+    <Content Include="Images\Step06\Templates.png" />
+    <Content Include="Images\Step06\Movies.png" />
+    <Content Include="Images\Step04\Enneagram.png" />
+    <Content Include="Images\Step04\Convey.png" />
+    <Content Include="Images\Step04\Hipocrates.png" />
+    <Content Include="Images\Step03\Angel.png" />
+    <Content Include="Images\Step03\Aztec.png" />
+    <Content Include="Images\Step03\Brazilian.png" />
+    <Content Include="Images\Step03\Celtic.png" />
+    <Content Include="Images\Step03\Chinese.png" />
+    <Content Include="Images\Step03\Dayofborn.png" />
+    <Content Include="Images\Step03\Egyptian.png" />
+    <Content Include="Images\Step03\Gypsy.png" />
+    <Content Include="Images\Step03\Indian.png" />
+    <Content Include="Images\Step03\Maya.png" />
+    <Content Include="Images\Step03\Numerology.png" />
+    <Content Include="Images\Step03\Ocidental.png" />
+    <Content Include="Images\Step03\Shamanic.png" />
+    <Content Include="Images\Steps\001.jpg" />
+    <Content Include="Images\Steps\002.jpg" />
+    <Content Include="Images\Steps\003.jpg" />
+    <Content Include="Images\Steps\004.jpg" />
+    <Content Include="Images\Steps\005.jpg" />
+    <Content Include="Images\Steps\006.jpg" />
+    <Content Include="Images\Steps\007.jpg" />
+    <Content Include="Images\Steps\008.jpg" />
+    <Content Include="Images\partners\ca.png" />
+    <Content Include="Images\partners\cocacola.png" />
+    <Content Include="Images\partners\dow.png" />
+    <Content Include="Images\partners\google.png" />
+    <Content Include="Images\partners\hyundai.png" />
+    <Content Include="Images\partners\intel.png" />
+    <Content Include="Images\partners\jaguar.png" />
+    <Content Include="Images\partners\microsoft.png" />
+    <Content Include="Images\partners\nestle.png" />
+    <Content Include="Images\partners\shell.png" />
+    <Content Include="Images\partners\skype.png" />
+    <Content Include="Images\partners\uol.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="obj\Debug\Interop.FindNetPrintersLib.dll" />
+    <Content Include="obj\Debug\Interop.ShockwaveFlashObjects.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.ar.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.de.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.en.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.es.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.fr.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.it.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.ja.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.pt.designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\App_GlobalResources.Resources.zh.designer.cs.dll" />
+    <Content Include="obj\Debug\YourJester.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\YourJester.dll" />
+    <Content Include="obj\Debug\YourJester.pdb" />
+    <Content Include="PageDonations.aspx" />
+    <Content Include="PageEmail.aspx" />
+    <Content Include="PageLanguage.aspx" />
+    <Content Include="PagePanel.aspx" />
+    <Content Include="ScreenAboutUs\PageOurPartners.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserPhoto.aspx" />
+    <Content Include="ScreenMainFlow\PageStep01Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep02Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04CpsQuestions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04EnneagramQuestions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04HippocratesQuestions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep05Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep06Projects.aspx" />
+    <Content Include="ScreenMainFlow\PageStep06Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep06Tasks.aspx" />
+    <Content Include="ScreenMainFlow\PageStep07Results.aspx" />
+    <Content Include="ScreenMainFlow\PageStep08Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep08Results.aspx" />
+    <Content Include="ScreenProducts\PageWallpapers.aspx" />
+    <Content Include="ScreenProducts\PageCards.aspx" />
+    <Content Include="PageError.aspx" />
+    <Content Include="ScreenProducts\PageMandalas.aspx" />
+    <Content Include="ScreenProducts\PageMovies.aspx" />
+    <Content Include="ScreenProducts\PageMusic.aspx" />
+    <Content Include="ScreenProducts\PageNameMeaning.aspx" />
+    <Content Include="ScreenProducts\PageOracle.aspx" />
+    <Content Include="ScreenProducts\PageCalendar.aspx" />
+    <Content Include="ScreenProducts\PageRingtones.aspx" />
+    <Content Include="ScreenProducts\PageIdeias.aspx" />
+    <Content Include="ScreenProducts\PageTrips.aspx" />
+    <Content Include="ScreenAboutUs\PageAboutUs.aspx" />
+    <Content Include="ScreenAboutUs\PageOurMission.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserConfirmation.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserCreate.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserLogOn.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserChange.aspx" />
+    <Content Include="ScreenAccount\PageAccountUserRecovery.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\Jester\Jester0.png" />
+    <Content Include="Images\Jester\Jester1.png" />
+    <Content Include="Images\Jester\Jester2.png" />
+    <Content Include="Images\Jester\Jester3.png" />
+    <Content Include="Images\Jester\Jester4.png" />
+    <Content Include="Images\Jester\Jester5.png" />
+    <Content Include="Images\Jester\Jester6.png" />
+    <Content Include="Images\Jester\Jester7.png" />
+    <Content Include="ScreenInformation\PageCopyright.aspx" />
+    <Content Include="ScreenInformation\PageCommonQuestionss.aspx" />
+    <Content Include="ScreenInformation\PagePrivacity.aspx" />
+    <Content Include="ScreenInformation\PageTermsOfUse.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Angel.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Aztec.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Brazilian.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Celtic.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Chinese.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03DayOfBorn.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Egyptian.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Gypsy.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Indian.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Maya.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Numerology.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Occidental.aspx" />
+    <Content Include="ScreenMainFlow\PageStep03Shamanic.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04CpsResults.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04EnneagramResults.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04HippocratesResults.aspx" />
+    <Content Include="PageHome.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\YourJester New.csproj.ResolveComReference.cache" />
+    <Content Include="obj\Debug\YourJester.csproj.GenerateResource.Cache" />
+    <Content Include="obj\Debug\YourJester.csproj.ResolveComReference.cache" />
+    <Content Include="obj\Debug\YourJester.csprojResolveAssemblyReference.cache" />
+    <Content Include="PageMaster.Master" />
+    <Content Include="Boostrap example\sendemail.php" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ScreenMainFlow\PageStep01Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep02Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep04Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep05Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep06Questions.aspx" />
+    <Content Include="ScreenMainFlow\PageStep07Questions.aspx" />
+    <Content Include="ScreenProducts\PageAmulets.aspx" />
+    <Content Include="ScreenProducts\PageBiorhythm.aspx" />
+    <Content Include="ScreenProducts\PageBooks.aspx" />
+    <Content Include="ScreenProducts\PageOurApp.aspx" />
+    <Content Include="PageSupport.aspx" />
+    <Content Include="PageStatistics.aspx" />
+    <Content Include="Images\logo_03.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="YourJester.pfx" />
+    <Content Include="YourJester.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Resources.fr.designer.cs">
+      <DependentUpon>Resources.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.de.designer.cs">
+      <DependentUpon>Resources.de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.ar.designer.cs">
+      <DependentUpon>Resources.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.ja.designer.cs">
+      <DependentUpon>Resources.ja.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.zh.designer.cs">
+      <DependentUpon>Resources.zh.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.it.designer.cs">
+      <DependentUpon>Resources.it.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AppLogic\R0030TreatNewPage.cs" />
+    <Compile Include="AppLogic\R0010TreatLanguageCurrent.cs" />
+    <Compile Include="AppLogic\R9000TreatErrorException.cs" />
+    <Compile Include="AppLogic\R0090TreatLetters.cs" />
+    <Compile Include="AppLogic\R0100TreatNumbers.cs" />
+    <Compile Include="AppLogic\R0120TreatSpecials.cs" />
+    <Compile Include="AppLogic\R0130TreatLength.cs" />
+    <Compile Include="AppLogic\R0110TreatRepetition.cs" />
+    <Compile Include="AppLogic\R0180TreatLogOnAttempts.cs" />
+    <Compile Include="AppLogic\R0170TreatCodeConfirmation.cs" />
+    <Compile Include="AppLogic\R0050TreatDatetime.cs" />
+    <Compile Include="AppLogic\R0060TreatDecrypt.cs" />
+    <Compile Include="AppLogic\R0070TreatEncrypt.cs" />
+    <Compile Include="AppLogic\R0160TreatSendEmail.cs" />
+    <Compile Include="AppLogic\R0020TreatLanguageUser .cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PageMaster.Master.cs">
+      <DependentUpon>PageMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageMaster.Master.designer.cs">
+      <DependentUpon>PageMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PageDonations.aspx.cs">
+      <DependentUpon>PageDonations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageDonations.aspx.designer.cs">
+      <DependentUpon>PageDonations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageEmail.aspx.cs">
+      <DependentUpon>PageEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageEmail.aspx.designer.cs">
+      <DependentUpon>PageEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageLanguage.aspx.cs">
+      <DependentUpon>PageLanguage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLanguage.aspx.designer.cs">
+      <DependentUpon>PageLanguage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagePanel.aspx.cs">
+      <DependentUpon>PagePanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagePanel.aspx.designer.cs">
+      <DependentUpon>PagePanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageOurPartners.aspx.cs">
+      <DependentUpon>PageOurPartners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageOurPartners.aspx.designer.cs">
+      <DependentUpon>PageOurPartners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserPhoto.aspx.cs">
+      <DependentUpon>PageAccountUserPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserPhoto.aspx.designer.cs">
+      <DependentUpon>PageAccountUserPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep01Results.aspx.cs">
+      <DependentUpon>PageStep01Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep01Results.aspx.designer.cs">
+      <DependentUpon>PageStep01Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep02Results.aspx.cs">
+      <DependentUpon>PageStep02Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep02Results.aspx.designer.cs">
+      <DependentUpon>PageStep02Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Results.aspx.cs">
+      <DependentUpon>PageStep03Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Results.aspx.designer.cs">
+      <DependentUpon>PageStep03Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04CpsQuestions.aspx.cs">
+      <DependentUpon>PageStep04CpsQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04CpsQuestions.aspx.designer.cs">
+      <DependentUpon>PageStep04CpsQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04EnneagramQuestions.aspx.cs">
+      <DependentUpon>PageStep04EnneagramQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04EnneagramQuestions.aspx.designer.cs">
+      <DependentUpon>PageStep04EnneagramQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04HippocratesQuestions.aspx.cs">
+      <DependentUpon>PageStep04HippocratesQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04HippocratesQuestions.aspx.designer.cs">
+      <DependentUpon>PageStep04HippocratesQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04Results.aspx.cs">
+      <DependentUpon>PageStep04Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04Results.aspx.designer.cs">
+      <DependentUpon>PageStep04Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep05Results.aspx.cs">
+      <DependentUpon>PageStep05Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep05Results.aspx.designer.cs">
+      <DependentUpon>PageStep05Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Projects.aspx.cs">
+      <DependentUpon>PageStep06Projects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Projects.aspx.designer.cs">
+      <DependentUpon>PageStep06Projects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Results.aspx.cs">
+      <DependentUpon>PageStep06Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Results.aspx.designer.cs">
+      <DependentUpon>PageStep06Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Tasks.aspx.cs">
+      <DependentUpon>PageStep06Tasks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Tasks.aspx.designer.cs">
+      <DependentUpon>PageStep06Tasks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep07Results.aspx.cs">
+      <DependentUpon>PageStep07Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep07Results.aspx.designer.cs">
+      <DependentUpon>PageStep07Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep08Questions.aspx.cs">
+      <DependentUpon>PageStep08Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep08Questions.aspx.designer.cs">
+      <DependentUpon>PageStep08Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep08Results.aspx.cs">
+      <DependentUpon>PageStep08Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep08Results.aspx.designer.cs">
+      <DependentUpon>PageStep08Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageWallpapers.aspx.cs">
+      <DependentUpon>PageWallpapers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageWallpapers.aspx.designer.cs">
+      <DependentUpon>PageWallpapers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageCards.aspx.cs">
+      <DependentUpon>PageCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageCards.aspx.designer.cs">
+      <DependentUpon>PageCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageError.aspx.cs">
+      <DependentUpon>PageError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageError.aspx.designer.cs">
+      <DependentUpon>PageError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMandalas.aspx.cs">
+      <DependentUpon>PageMandalas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMandalas.aspx.designer.cs">
+      <DependentUpon>PageMandalas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMovies.aspx.cs">
+      <DependentUpon>PageMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMovies.aspx.designer.cs">
+      <DependentUpon>PageMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMusic.aspx.cs">
+      <DependentUpon>PageMusic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageMusic.aspx.designer.cs">
+      <DependentUpon>PageMusic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageNameMeaning.aspx.cs">
+      <DependentUpon>PageNameMeaning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageNameMeaning.aspx.designer.cs">
+      <DependentUpon>PageNameMeaning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageOracle.aspx.cs">
+      <DependentUpon>PageOracle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageOracle.aspx.designer.cs">
+      <DependentUpon>PageOracle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageCalendar.aspx.cs">
+      <DependentUpon>PageCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageCalendar.aspx.designer.cs">
+      <DependentUpon>PageCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageRingtones.aspx.cs">
+      <DependentUpon>PageRingtones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageRingtones.aspx.designer.cs">
+      <DependentUpon>PageRingtones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageIdeias.aspx.cs">
+      <DependentUpon>PageIdeias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageIdeias.aspx.designer.cs">
+      <DependentUpon>PageIdeias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageTrips.aspx.cs">
+      <DependentUpon>PageTrips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageTrips.aspx.designer.cs">
+      <DependentUpon>PageTrips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageAboutUs.aspx.cs">
+      <DependentUpon>PageAboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageAboutUs.aspx.designer.cs">
+      <DependentUpon>PageAboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageOurMission.aspx.cs">
+      <DependentUpon>PageOurMission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAboutUs\PageOurMission.aspx.designer.cs">
+      <DependentUpon>PageOurMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserConfirmation.aspx.cs">
+      <DependentUpon>PageAccountUserConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserConfirmation.aspx.designer.cs">
+      <DependentUpon>PageAccountUserConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserCreate.aspx.cs">
+      <DependentUpon>PageAccountUserCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserCreate.aspx.designer.cs">
+      <DependentUpon>PageAccountUserCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.en.designer.cs">
+      <DependentUpon>Resources.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.es.designer.cs">
+      <DependentUpon>Resources.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.pt.designer.cs">
+      <DependentUpon>Resources.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserLogOn.aspx.cs">
+      <DependentUpon>PageAccountUserLogOn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserLogOn.aspx.designer.cs">
+      <DependentUpon>PageAccountUserLogOn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserChange.aspx.cs">
+      <DependentUpon>PageAccountUserChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserChange.aspx.designer.cs">
+      <DependentUpon>PageAccountUserChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserRecovery.aspx.cs">
+      <DependentUpon>PageAccountUserRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenAccount\PageAccountUserRecovery.aspx.designer.cs">
+      <DependentUpon>PageAccountUserRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenInformation\PageCopyright.aspx.cs">
+      <DependentUpon>PageCopyright.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenInformation\PageCopyright.aspx.designer.cs">
+      <DependentUpon>PageCopyright.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenInformation\PageCommonQuestionss.aspx.cs">
+      <DependentUpon>PageCommonQuestionss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenInformation\PageCommonQuestionss.aspx.designer.cs">
+      <DependentUpon>PageCommonQuestionss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenInformation\PagePrivacity.aspx.cs">
+      <DependentUpon>PagePrivacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenInformation\PagePrivacity.aspx.designer.cs">
+      <DependentUpon>PagePrivacity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenInformation\PageTermsOfUse.aspx.cs">
+      <DependentUpon>PageTermsOfUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenInformation\PageTermsOfUse.aspx.designer.cs">
+      <DependentUpon>PageTermsOfUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Questions.aspx.cs">
+      <DependentUpon>PageStep03Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Questions.aspx.designer.cs">
+      <DependentUpon>PageStep03Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Angel.aspx.cs">
+      <DependentUpon>PageStep03Angel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Angel.aspx.designer.cs">
+      <DependentUpon>PageStep03Angel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Aztec.aspx.cs">
+      <DependentUpon>PageStep03Aztec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Aztec.aspx.designer.cs">
+      <DependentUpon>PageStep03Aztec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Brazilian.aspx.cs">
+      <DependentUpon>PageStep03Brazilian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Brazilian.aspx.designer.cs">
+      <DependentUpon>PageStep03Brazilian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Celtic.aspx.cs">
+      <DependentUpon>PageStep03Celtic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Celtic.aspx.designer.cs">
+      <DependentUpon>PageStep03Celtic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Chinese.aspx.cs">
+      <DependentUpon>PageStep03Chinese.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Chinese.aspx.designer.cs">
+      <DependentUpon>PageStep03Chinese.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03DayOfBorn.aspx.cs">
+      <DependentUpon>PageStep03DayOfBorn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03DayOfBorn.aspx.designer.cs">
+      <DependentUpon>PageStep03DayOfBorn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Egyptian.aspx.cs">
+      <DependentUpon>PageStep03Egyptian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Egyptian.aspx.designer.cs">
+      <DependentUpon>PageStep03Egyptian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Gypsy.aspx.cs">
+      <DependentUpon>PageStep03Gypsy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Gypsy.aspx.designer.cs">
+      <DependentUpon>PageStep03Gypsy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Indian.aspx.cs">
+      <DependentUpon>PageStep03Indian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Indian.aspx.designer.cs">
+      <DependentUpon>PageStep03Indian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Maya.aspx.cs">
+      <DependentUpon>PageStep03Maya.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Maya.aspx.designer.cs">
+      <DependentUpon>PageStep03Maya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Numerology.aspx.cs">
+      <DependentUpon>PageStep03Numerology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Numerology.aspx.designer.cs">
+      <DependentUpon>PageStep03Numerology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Occidental.aspx.cs">
+      <DependentUpon>PageStep03Occidental.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Occidental.aspx.designer.cs">
+      <DependentUpon>PageStep03Occidental.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Shamanic.aspx.cs">
+      <DependentUpon>PageStep03Shamanic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep03Shamanic.aspx.designer.cs">
+      <DependentUpon>PageStep03Shamanic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04CpsResults.aspx.cs">
+      <DependentUpon>PageStep04CpsResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04CpsResults.aspx.designer.cs">
+      <DependentUpon>PageStep04CpsResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04EnneagramResults.aspx.cs">
+      <DependentUpon>PageStep04EnneagramResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04EnneagramResults.aspx.designer.cs">
+      <DependentUpon>PageStep04EnneagramResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04HippocratesResults.aspx.cs">
+      <DependentUpon>PageStep04HippocratesResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04HippocratesResults.aspx.designer.cs">
+      <DependentUpon>PageStep04HippocratesResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageHome.aspx.cs">
+      <DependentUpon>PageHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageHome.aspx.designer.cs">
+      <DependentUpon>PageHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep01Questions.aspx.cs">
+      <DependentUpon>PageStep01Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep01Questions.aspx.designer.cs">
+      <DependentUpon>PageStep01Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep02Questions.aspx.cs">
+      <DependentUpon>PageStep02Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep02Questions.aspx.designer.cs">
+      <DependentUpon>PageStep02Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04Questions.aspx.cs">
+      <DependentUpon>PageStep04Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep04Questions.aspx.designer.cs">
+      <DependentUpon>PageStep04Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep05Questions.aspx.cs">
+      <DependentUpon>PageStep05Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep05Questions.aspx.designer.cs">
+      <DependentUpon>PageStep05Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Questions.aspx.cs">
+      <DependentUpon>PageStep06Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep06Questions.aspx.designer.cs">
+      <DependentUpon>PageStep06Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep07Questions.aspx.cs">
+      <DependentUpon>PageStep07Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenMainFlow\PageStep07Questions.aspx.designer.cs">
+      <DependentUpon>PageStep07Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenProducts\PageAmulets.aspx.cs">
+      <DependentUpon>PageAmulets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageAmulets.aspx.designer.cs">
+      <DependentUpon>PageAmulets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageBiorhythm.aspx.cs">
+      <DependentUpon>PageBiorhythm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageBiorhythm.aspx.designer.cs">
+      <DependentUpon>PageBiorhythm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageBooks.aspx.cs">
+      <DependentUpon>PageBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageBooks.aspx.designer.cs">
+      <DependentUpon>PageBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenProducts\PageOurApp.aspx.cs">
+      <DependentUpon>PageOurApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScreenProducts\PageOurApp.aspx.designer.cs">
+      <DependentUpon>PageOurApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageSupport.aspx.cs">
+      <DependentUpon>PageSupport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageSupport.aspx.designer.cs">
+      <DependentUpon>PageSupport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageStatistics.aspx.cs">
+      <DependentUpon>PageStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageStatistics.aspx.designer.cs">
+      <DependentUpon>PageStatistics.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.en.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.es.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.es.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\pt-br\" />
+    <Folder Include="bin\ru-ru\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FindNetPrintersLib">
+      <Guid>{0FFF9602-69CF-4728-9EA4-141514866CA2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.it.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.it.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.fr.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.fr.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.ar.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.ja.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.ja.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.zh.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.zh.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.de.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="obj\Debug\YourJester.PageID_Create.resources" />
+    <EmbeddedResource Include="obj\Debug\YourJester.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="ScreenAccount\PageAccountUserCreate.aspx.resx">
+      <DependentUpon>PageAccountUserCreate.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YourJester.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

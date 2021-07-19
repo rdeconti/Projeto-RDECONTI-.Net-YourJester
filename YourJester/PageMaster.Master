@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PageMaster.Master.cs" Inherits="YourJester.PageMaster" %>
+<!DOCTYPE html>
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Home | YourJester</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <body class="homepage">
+        <form id="form1" runat="server" method="post" translate="no">
+
+            <!-PORTAL MENU BAR ------------------------------------------------------------------------------------------------------>
+
+            <header id="header">
+                <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="background-color: #000000">
+                    <div class="row">
+
+                        <div class="col-md-04">
+
+
+
+                        </div>
+                        <div class="col-md-04">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-inverse" role="banner" style="background-color: #000000">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <img src="Images/logo_04.png" class="img-responsive">
+                            </li>
+                            <li>
+                                <a href="PageHome.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuHome%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PageLanguage.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuLanguage%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/ScreenAccount/PageAccountUserLogOn.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuAccount%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PagePanel.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuPanel%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PageSupport.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuSupport%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PageStatistics.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuStatistics%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PageDonations.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuDonations%>" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/PageEmail.aspx" style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuContact%>" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-PORTAL INFORMATION AREA--------------------------------------------------------------------------------------->
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-PORTAL BOTTOM BAR -------------------------------------------------------------------------------------------->
+
+            <section id="bottom">
+                <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <h3 style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuAboutUs%>" />
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="/ScreenAboutUs/PageOurMission.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuOurMission%>" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ScreenAboutUs/PageAboutUs.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuOurEnterprise%>" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ScreenAboutUs/PageOurPartners.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuOurPartners%>" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h3 style="font-weight: bold">
+                                    <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuInformations%>" />
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="/ScreenInformation/PagePrivacity.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuPrivacity%>" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ScreenInformation/PageTermsOfUse.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuTermsOfUse%>" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ScreenInformation/PageCopyright.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuCopyright %>" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ScreenInformation/PageCommonQuestions.aspx">
+                                            <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterMenuCredits%>" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-PORTAL SOCIAL NETWORKS --------------------------------------------------------------------------------------------->
+
+            <footer id="footer" class="midnight-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">
+                                <asp:Literal runat="server" Text="<%$ Resources:Resources, PageMasterTextSince%>" />
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="social">
+                                <ul class="social-share">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="js/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.prettyPhoto.js"></script>
+            <script src="js/jquery.isotope.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/wow.min.js"></script>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+﻿********** 10/06/2016 13:25:18 **********
+Inner Exception Type: MySql.Data.MySqlClient.MySqlException
+Inner Exception: Parameter '@SkinColour' must be defined.
+Inner Source: MySql.Data
+Inner Stack Trace: 
+   at MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName, Int32 parameterIndex)
+   at MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   at MySql.Data.MySqlClient.Statement.BindParameters()
+   at MySql.Data.MySqlClient.Statement.Execute()
+   at MySql.Data.MySqlClient.PreparableStatement.Execute()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+Exception Type: MySql.Data.MySqlClient.MySqlException
+Exception: Fatal error encountered during command execution.
+Stack Trace: 
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at YourJester.PageStep01Questions.R0140DatabaseUpdateUsersMasterData() in C:\Users\OdaireRose\Documents\YourJester\YourJester\ScreenMainFlow\PageStep01Questions.aspx.cs:line 372
+
+User code ............. RDECONTI01
+User name ............. 
+User birthday ......... 
+User birthMonth ....... 
+User birthYear ........ 
